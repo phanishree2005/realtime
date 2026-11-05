@@ -1,0 +1,488 @@
+[
+  {
+    "lambda": 20.0,
+    "rcrit": 0.3,
+    "policies": {
+      "CASDS": {
+        "dsr_total": 66.0,
+        "dsr_critical": 68.75,
+        "dsr_noncritical": 64.70588235294117,
+        "makespan": 6370.00301436374,
+        "utilization": 49.8828407831742,
+        "effective_throughput": 5.180531300470062
+      },
+      "HetSched": {
+        "dsr_total": 62.0,
+        "dsr_critical": 62.5,
+        "dsr_noncritical": 61.76470588235294,
+        "makespan": 6370.00301436374,
+        "utilization": 53.97533975224018,
+        "effective_throughput": 4.86655970650218
+      },
+      "ADS": {
+        "dsr_total": 50.0,
+        "dsr_critical": 56.25,
+        "dsr_noncritical": 47.05882352941176,
+        "makespan": 6453.00301436374,
+        "utilization": 57.30307614204373,
+        "effective_throughput": 3.8741652443602614
+      },
+      "ASDYS": {
+        "dsr_total": 57.99999999999999,
+        "dsr_critical": 62.5,
+        "dsr_noncritical": 55.88235294117647,
+        "makespan": 6370.00301436374,
+        "utilization": 54.05987056600077,
+        "effective_throughput": 4.5525881125342975
+      },
+      "TD_ADS": {
+        "dsr_total": 62.0,
+        "dsr_critical": 62.5,
+        "dsr_noncritical": 61.76470588235294,
+        "makespan": 6370.00301436374,
+        "utilization": 53.939112260628505,
+        "effective_throughput": 4.86655970650218
+      },
+      "ULS": {
+        "dsr_total": 38.0,
+        "dsr_critical": 43.75,
+        "dsr_noncritical": 35.294117647058826,
+        "makespan": 6370.00301436374,
+        "utilization": 41.014350836635245,
+        "effective_throughput": 2.9827301426948845
+      }
+    }
+  },
+  {
+    "lambda": 20.0,
+    "rcrit": 0.6,
+    "policies": {
+      "CASDS": {
+        "dsr_total": 66.0,
+        "dsr_critical": 68.96551724137932,
+        "dsr_noncritical": 61.904761904761905,
+        "makespan": 6370.00301436374,
+        "utilization": 49.86472703736837,
+        "effective_throughput": 5.180531300470062
+      },
+      "HetSched": {
+        "dsr_total": 64.0,
+        "dsr_critical": 68.96551724137932,
+        "dsr_noncritical": 57.14285714285714,
+        "makespan": 6370.00301436374,
+        "utilization": 49.8828407831742,
+        "effective_throughput": 5.023545503486122
+      },
+      "ADS": {
+        "dsr_total": 86.0,
+        "dsr_critical": 93.10344827586206,
+        "dsr_noncritical": 76.19047619047619,
+        "makespan": 6381.00301436374,
+        "utilization": 45.2689863664547,
+        "effective_throughput": 6.738752497562894
+      },
+      "ASDYS": {
+        "dsr_total": 60.0,
+        "dsr_critical": 65.51724137931035,
+        "dsr_noncritical": 52.38095238095239,
+        "makespan": 6370.00301436374,
+        "utilization": 49.86472703736837,
+        "effective_throughput": 4.709573909518238
+      },
+      "TD_ADS": {
+        "dsr_total": 64.0,
+        "dsr_critical": 68.96551724137932,
+        "dsr_noncritical": 57.14285714285714,
+        "makespan": 6370.00301436374,
+        "utilization": 49.79227205414501,
+        "effective_throughput": 5.023545503486122
+      },
+      "ULS": {
+        "dsr_total": 38.0,
+        "dsr_critical": 37.93103448275862,
+        "dsr_noncritical": 38.095238095238095,
+        "makespan": 6370.00301436374,
+        "utilization": 41.014350836635245,
+        "effective_throughput": 2.9827301426948845
+      }
+    }
+  },
+  {
+    "lambda": 20.0,
+    "rcrit": 0.9,
+    "policies": {
+      "CASDS": {
+        "dsr_total": 64.0,
+        "dsr_critical": 67.3913043478261,
+        "dsr_noncritical": 25.0,
+        "makespan": 6370.00301436374,
+        "utilization": 49.642531755483404,
+        "effective_throughput": 5.023545503486122
+      },
+      "HetSched": {
+        "dsr_total": 64.0,
+        "dsr_critical": 67.3913043478261,
+        "dsr_noncritical": 25.0,
+        "makespan": 6370.00301436374,
+        "utilization": 49.642531755483404,
+        "effective_throughput": 5.023545503486122
+      },
+      "ADS": {
+        "dsr_total": 38.0,
+        "dsr_critical": 41.30434782608695,
+        "dsr_noncritical": 0.0,
+        "makespan": 6469.00301436374,
+        "utilization": 46.869664355817484,
+        "effective_throughput": 2.9370831885241824
+      },
+      "ASDYS": {
+        "dsr_total": 38.0,
+        "dsr_critical": 41.30434782608695,
+        "dsr_noncritical": 0.0,
+        "makespan": 6370.00301436374,
+        "utilization": 41.104919565664446,
+        "effective_throughput": 2.9827301426948845
+      },
+      "TD_ADS": {
+        "dsr_total": 38.0,
+        "dsr_critical": 41.30434782608695,
+        "dsr_noncritical": 0.0,
+        "makespan": 6370.00301436374,
+        "utilization": 41.03246458244109,
+        "effective_throughput": 2.9827301426948845
+      },
+      "ULS": {
+        "dsr_total": 38.0,
+        "dsr_critical": 41.30434782608695,
+        "dsr_noncritical": 0.0,
+        "makespan": 6370.00301436374,
+        "utilization": 41.014350836635245,
+        "effective_throughput": 2.9827301426948845
+      }
+    }
+  },
+  {
+    "lambda": 30.0,
+    "rcrit": 0.3,
+    "policies": {
+      "CASDS": {
+        "dsr_total": 70.0,
+        "dsr_critical": 100.0,
+        "dsr_noncritical": 55.88235294117647,
+        "makespan": 2522.002009575827,
+        "utilization": 24.016329304756525,
+        "effective_throughput": 13.877863644480845
+      },
+      "HetSched": {
+        "dsr_total": 42.0,
+        "dsr_critical": 100.0,
+        "dsr_noncritical": 14.705882352941178,
+        "makespan": 2520.002009575827,
+        "utilization": 24.03538986836996,
+        "effective_throughput": 8.333326687915925
+      },
+      "ADS": {
+        "dsr_total": 42.0,
+        "dsr_critical": 100.0,
+        "dsr_noncritical": 14.705882352941178,
+        "makespan": 2520.002009575827,
+        "utilization": 23.714877303450116,
+        "effective_throughput": 8.333326687915925
+      },
+      "ASDYS": {
+        "dsr_total": 42.0,
+        "dsr_critical": 100.0,
+        "dsr_noncritical": 14.705882352941178,
+        "makespan": 2520.002009575827,
+        "utilization": 23.714877303450116,
+        "effective_throughput": 8.333326687915925
+      },
+      "TD_ADS": {
+        "dsr_total": 42.0,
+        "dsr_critical": 100.0,
+        "dsr_noncritical": 14.705882352941178,
+        "makespan": 2520.002009575827,
+        "utilization": 23.76066481272438,
+        "effective_throughput": 8.333326687915925
+      },
+      "ULS": {
+        "dsr_total": 22.0,
+        "dsr_critical": 18.75,
+        "dsr_noncritical": 23.52941176470588,
+        "makespan": 2520.002009575827,
+        "utilization": 23.531727266353066,
+        "effective_throughput": 4.365075884146437
+      }
+    }
+  },
+  {
+    "lambda": 30.0,
+    "rcrit": 0.6,
+    "policies": {
+      "CASDS": {
+        "dsr_total": 70.0,
+        "dsr_critical": 96.55172413793103,
+        "dsr_noncritical": 33.33333333333333,
+        "makespan": 2537.002009575827,
+        "utilization": 23.783371597939652,
+        "effective_throughput": 13.795810909054744
+      },
+      "HetSched": {
+        "dsr_total": 62.0,
+        "dsr_critical": 100.0,
+        "dsr_noncritical": 9.523809523809524,
+        "makespan": 2537.002009575827,
+        "utilization": 23.82885229324423,
+        "effective_throughput": 12.219146805162772
+      },
+      "ADS": {
+        "dsr_total": 62.0,
+        "dsr_critical": 100.0,
+        "dsr_noncritical": 9.523809523809524,
+        "makespan": 2520.002009575827,
+        "utilization": 23.806452321998645,
+        "effective_throughput": 12.301577491685414
+      },
+      "ASDYS": {
+        "dsr_total": 62.0,
+        "dsr_critical": 100.0,
+        "dsr_noncritical": 9.523809523809524,
+        "makespan": 2520.002009575827,
+        "utilization": 23.806452321998645,
+        "effective_throughput": 12.301577491685414
+      },
+      "TD_ADS": {
+        "dsr_total": 62.0,
+        "dsr_critical": 100.0,
+        "dsr_noncritical": 9.523809523809524,
+        "makespan": 2537.002009575827,
+        "utilization": 23.737890902635076,
+        "effective_throughput": 12.219146805162772
+      },
+      "ULS": {
+        "dsr_total": 22.0,
+        "dsr_critical": 20.689655172413794,
+        "dsr_noncritical": 23.809523809523807,
+        "makespan": 2520.002009575827,
+        "utilization": 23.531727266353066,
+        "effective_throughput": 4.365075884146437
+      }
+    }
+  },
+  {
+    "lambda": 30.0,
+    "rcrit": 0.9,
+    "policies": {
+      "CASDS": {
+        "dsr_total": 72.0,
+        "dsr_critical": 76.08695652173914,
+        "dsr_noncritical": 25.0,
+        "makespan": 2537.002009575827,
+        "utilization": 23.783371597939652,
+        "effective_throughput": 14.189976935027735
+      },
+      "HetSched": {
+        "dsr_total": 22.0,
+        "dsr_critical": 23.91304347826087,
+        "dsr_noncritical": 0.0,
+        "makespan": 2505.002009575827,
+        "utilization": 23.902944128600545,
+        "effective_throughput": 4.391214042124714
+      },
+      "ADS": {
+        "dsr_total": 22.0,
+        "dsr_critical": 23.91304347826087,
+        "dsr_noncritical": 0.0,
+        "makespan": 2509.002009575827,
+        "utilization": 23.634895378192734,
+        "effective_throughput": 4.384213307927826
+      },
+      "ASDYS": {
+        "dsr_total": 22.0,
+        "dsr_critical": 23.91304347826087,
+        "dsr_noncritical": 0.0,
+        "makespan": 2505.002009575827,
+        "utilization": 23.718697385574334,
+        "effective_throughput": 4.391214042124714
+      },
+      "TD_ADS": {
+        "dsr_total": 22.0,
+        "dsr_critical": 23.91304347826087,
+        "dsr_noncritical": 0.0,
+        "makespan": 2505.002009575827,
+        "utilization": 23.718697385574334,
+        "effective_throughput": 4.391214042124714
+      },
+      "ULS": {
+        "dsr_total": 22.0,
+        "dsr_critical": 23.91304347826087,
+        "dsr_noncritical": 0.0,
+        "makespan": 2520.002009575827,
+        "utilization": 23.531727266353066,
+        "effective_throughput": 4.365075884146437
+      }
+    }
+  },
+  {
+    "lambda": 40.0,
+    "rcrit": 0.3,
+    "policies": {
+      "CASDS": {
+        "dsr_total": 28.000000000000004,
+        "dsr_critical": 62.5,
+        "dsr_noncritical": 11.76470588235294,
+        "makespan": 5768.50150718187,
+        "utilization": 57.45659615860647,
+        "effective_throughput": 2.4269734492692416
+      },
+      "HetSched": {
+        "dsr_total": 30.0,
+        "dsr_critical": 75.0,
+        "dsr_noncritical": 8.823529411764707,
+        "makespan": 5768.50150718187,
+        "utilization": 55.401669738098846,
+        "effective_throughput": 2.600328695645616
+      },
+      "ADS": {
+        "dsr_total": 28.000000000000004,
+        "dsr_critical": 62.5,
+        "dsr_noncritical": 11.76470588235294,
+        "makespan": 9307.50150718187,
+        "utilization": 59.531798868338406,
+        "effective_throughput": 1.504163065587182
+      },
+      "ASDYS": {
+        "dsr_total": 18.0,
+        "dsr_critical": 31.25,
+        "dsr_noncritical": 11.76470588235294,
+        "makespan": 5768.50150718187,
+        "utilization": 64.50948768233451,
+        "effective_throughput": 1.5601972173873695
+      },
+      "TD_ADS": {
+        "dsr_total": 28.000000000000004,
+        "dsr_critical": 62.5,
+        "dsr_noncritical": 11.76470588235294,
+        "makespan": 5786.50150718187,
+        "utilization": 49.37087029702493,
+        "effective_throughput": 2.4194238924199727
+      },
+      "ULS": {
+        "dsr_total": 12.0,
+        "dsr_critical": 12.5,
+        "dsr_noncritical": 11.76470588235294,
+        "makespan": 5768.50150718187,
+        "utilization": 64.11343761945926,
+        "effective_throughput": 1.0401314782582463
+      }
+    }
+  },
+  {
+    "lambda": 40.0,
+    "rcrit": 0.6,
+    "policies": {
+      "CASDS": {
+        "dsr_total": 26.0,
+        "dsr_critical": 34.48275862068966,
+        "dsr_noncritical": 14.285714285714285,
+        "makespan": 4334.50150718187,
+        "utilization": 62.709722021093214,
+        "effective_throughput": 2.9991914822177814
+      },
+      "HetSched": {
+        "dsr_total": 26.0,
+        "dsr_critical": 37.93103448275862,
+        "dsr_noncritical": 9.523809523809524,
+        "makespan": 5768.50150718187,
+        "utilization": 49.58493447122388,
+        "effective_throughput": 2.2536182028928673
+      },
+      "ADS": {
+        "dsr_total": 26.0,
+        "dsr_critical": 37.93103448275862,
+        "dsr_noncritical": 9.523809523809524,
+        "makespan": 9318.50150718187,
+        "utilization": 57.0816438893562,
+        "effective_throughput": 1.395074088895168
+      },
+      "ASDYS": {
+        "dsr_total": 26.0,
+        "dsr_critical": 37.93103448275862,
+        "dsr_noncritical": 9.523809523809524,
+        "makespan": 5750.50150718187,
+        "utilization": 50.17756338047823,
+        "effective_throughput": 2.2606723924451018
+      },
+      "TD_ADS": {
+        "dsr_total": 26.0,
+        "dsr_critical": 37.93103448275862,
+        "dsr_noncritical": 9.523809523809524,
+        "makespan": 5750.50150718187,
+        "utilization": 49.615739472296596,
+        "effective_throughput": 2.2606723924451018
+      },
+      "ULS": {
+        "dsr_total": 12.0,
+        "dsr_critical": 13.793103448275861,
+        "dsr_noncritical": 9.523809523809524,
+        "makespan": 5768.50150718187,
+        "utilization": 64.11343761945926,
+        "effective_throughput": 1.0401314782582463
+      }
+    }
+  },
+  {
+    "lambda": 40.0,
+    "rcrit": 0.9,
+    "policies": {
+      "CASDS": {
+        "dsr_total": 12.0,
+        "dsr_critical": 13.043478260869565,
+        "dsr_noncritical": 0.0,
+        "makespan": 5768.50150718187,
+        "utilization": 64.2734578468836,
+        "effective_throughput": 1.0401314782582463
+      },
+      "HetSched": {
+        "dsr_total": 12.0,
+        "dsr_critical": 13.043478260869565,
+        "dsr_noncritical": 0.0,
+        "makespan": 5768.50150718187,
+        "utilization": 64.15344267631534,
+        "effective_throughput": 1.0401314782582463
+      },
+      "ADS": {
+        "dsr_total": 12.0,
+        "dsr_critical": 13.043478260869565,
+        "dsr_noncritical": 0.0,
+        "makespan": 6063.753189901725,
+        "utilization": 63.04168702081131,
+        "effective_throughput": 0.9894861832424354
+      },
+      "ASDYS": {
+        "dsr_total": 12.0,
+        "dsr_critical": 13.043478260869565,
+        "dsr_noncritical": 0.0,
+        "makespan": 5768.50150718187,
+        "utilization": 64.1267726384113,
+        "effective_throughput": 1.0401314782582463
+      },
+      "TD_ADS": {
+        "dsr_total": 12.0,
+        "dsr_critical": 13.043478260869565,
+        "dsr_noncritical": 0.0,
+        "makespan": 5768.50150718187,
+        "utilization": 64.11343761945926,
+        "effective_throughput": 1.0401314782582463
+      },
+      "ULS": {
+        "dsr_total": 12.0,
+        "dsr_critical": 13.043478260869565,
+        "dsr_noncritical": 0.0,
+        "makespan": 5768.50150718187,
+        "utilization": 64.11343761945926,
+        "effective_throughput": 1.0401314782582463
+      }
+    }
+  }
+]

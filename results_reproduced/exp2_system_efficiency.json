@@ -1,0 +1,792 @@
+{
+  "metadata": {
+    "num_dags": 25,
+    "num_runs": 2,
+    "lambdas": [
+      20.0,
+      25.0,
+      30.0,
+      35.0,
+      40.0
+    ],
+    "critical_ratio": 0.6,
+    "schedulers": [
+      "ADS",
+      "ASDYS",
+      "HetSched",
+      "TD_ADS",
+      "ULS",
+      "CASDS"
+    ],
+    "std_method": "sample_ddof1_when_N_ge_2_else_population_ddof0",
+    "elapsed_seconds": 7.29
+  },
+  "by_lambda": {
+    "lambda_20": {
+      "ADS": {
+        "Makespan_mean": 2.111461742250613,
+        "Makespan_std": 0.18788343397900684,
+        "Utilization_mean": 22.050582353956912,
+        "Utilization_std": 0.1502621923762399,
+        "ET_mean": 4.695044232772824,
+        "ET_std": 0.9217813672223717,
+        "variance_note": ""
+      },
+      "ASDYS": {
+        "Makespan_mean": 2.0884117422506128,
+        "Makespan_std": 0.2641802556690357,
+        "Utilization_mean": 22.27332160343692,
+        "Utilization_std": 0.8771766478042775,
+        "ET_mean": 5.749161286396261,
+        "ET_std": 0.05008654856387007,
+        "variance_note": ""
+      },
+      "HetSched": {
+        "Makespan_mean": 2.065411742250613,
+        "Makespan_std": 0.23165334373445431,
+        "Utilization_mean": 22.656466946885676,
+        "Utilization_std": 0.4211380942779981,
+        "ET_mean": 7.269801582903778,
+        "ET_std": 0.1306568937671172,
+        "variance_note": ""
+      },
+      "TD_ADS": {
+        "Makespan_mean": 2.067411742250613,
+        "Makespan_std": 0.23448177085920052,
+        "Utilization_mean": 22.63644319331511,
+        "Utilization_std": 0.44945595814710926,
+        "ET_mean": 5.802890380381996,
+        "ET_std": 0.025897864844773646,
+        "variance_note": ""
+      },
+      "ULS": {
+        "Makespan_mean": 2.0924117422506128,
+        "Makespan_std": 0.1991264317998731,
+        "Utilization_mean": 22.371961759696518,
+        "Utilization_std": 0.07542272772781498,
+        "ET_mean": 5.7287902338386125,
+        "ET_std": 0.1306912970602601,
+        "variance_note": ""
+      },
+      "CASDS": {
+        "Makespan_mean": 2.065411742250613,
+        "Makespan_std": 0.23165334373445431,
+        "Utilization_mean": 22.656466946885676,
+        "Utilization_std": 0.4211380942779981,
+        "ET_mean": 8.770131331002979,
+        "ET_std": 0.9836441839937146,
+        "variance_note": ""
+      },
+      "_runs": [
+        {
+          "run_idx": 0,
+          "seed": 5200,
+          "schedulers": {
+            "ADS": {
+              "DSR": 48.0,
+              "Makespan_s": 2.2443153924897836,
+              "Utilization": 22.15683376914211,
+              "ET": 5.34684208830717
+            },
+            "ASDYS": {
+              "DSR": 52.0,
+              "Makespan_s": 2.275215392489784,
+              "Utilization": 21.653064047476033,
+              "ET": 5.7137447482605195
+            },
+            "HetSched": {
+              "DSR": 64.0,
+              "Makespan_s": 2.2292153924897837,
+              "Utilization": 22.358677344605724,
+              "ET": 7.177413207312279
+            },
+            "TD_ADS": {
+              "DSR": 52.0,
+              "Makespan_s": 2.2332153924897837,
+              "Utilization": 22.31862983746459,
+              "ET": 5.8212029362319875
+            },
+            "ULS": {
+              "DSR": 52.0,
+              "Makespan_s": 2.2332153924897837,
+              "Utilization": 22.31862983746459,
+              "ET": 5.8212029362319875
+            },
+            "CASDS": {
+              "DSR": 72.0,
+              "Makespan_s": 2.2292153924897837,
+              "Utilization": 22.358677344605724,
+              "ET": 8.074589858226314
+            }
+          }
+        },
+        {
+          "run_idx": 1,
+          "seed": 5201,
+          "schedulers": {
+            "ADS": {
+              "DSR": 32.0,
+              "Makespan_s": 1.9786080920114422,
+              "Utilization": 21.944330938771717,
+              "ET": 4.043246377238478
+            },
+            "ASDYS": {
+              "DSR": 44.0,
+              "Makespan_s": 1.901608092011442,
+              "Utilization": 22.89357915939781,
+              "ET": 5.784577824532003
+            },
+            "HetSched": {
+              "DSR": 56.00000000000001,
+              "Makespan_s": 1.901608092011442,
+              "Utilization": 22.954256549165628,
+              "ET": 7.362189958495277
+            },
+            "TD_ADS": {
+              "DSR": 44.0,
+              "Makespan_s": 1.901608092011442,
+              "Utilization": 22.954256549165628,
+              "ET": 5.784577824532003
+            },
+            "ULS": {
+              "DSR": 44.0,
+              "Makespan_s": 1.951608092011442,
+              "Utilization": 22.42529368192844,
+              "ET": 5.636377531445237
+            },
+            "CASDS": {
+              "DSR": 72.0,
+              "Makespan_s": 1.901608092011442,
+              "Utilization": 22.954256549165628,
+              "ET": 9.465672803779642
+            }
+          }
+        }
+      ]
+    },
+    "lambda_25": {
+      "ADS": {
+        "Makespan_mean": 1.97165,
+        "Makespan_std": 0.13654231944712236,
+        "Utilization_mean": 21.99174952901368,
+        "Utilization_std": 0.6539854262913596,
+        "ET_mean": 5.0591892875535045,
+        "ET_std": 0.3669110250442553,
+        "variance_note": ""
+      },
+      "ASDYS": {
+        "Makespan_mean": 1.9301499999999998,
+        "Makespan_std": 0.0071417784899841285,
+        "Utilization_mean": 22.648968913062284,
+        "Utilization_std": 0.9306986175115372,
+        "ET_mean": 6.2131093236669885,
+        "ET_std": 2.1750993635705007,
+        "variance_note": ""
+      },
+      "HetSched": {
+        "Makespan_mean": 1.9196499999999999,
+        "Makespan_std": 0.06158900064134826,
+        "Utilization_mean": 22.76994001773614,
+        "Utilization_std": 0.2895131952375176,
+        "ET_mean": 7.030241253303089,
+        "ET_std": 0.14279751419687478,
+        "variance_note": ""
+      },
+      "TD_ADS": {
+        "Makespan_mean": 1.91915,
+        "Makespan_std": 0.062296107422534726,
+        "Utilization_mean": 22.77595708969874,
+        "Utilization_std": 0.2810037704622347,
+        "ET_mean": 4.461294256645351,
+        "ET_std": 1.987054254325224,
+        "variance_note": ""
+      },
+      "ULS": {
+        "Makespan_mean": 1.91915,
+        "Makespan_std": 0.062296107422534726,
+        "Utilization_mean": 22.77595708969874,
+        "Utilization_std": 0.2810037704622347,
+        "ET_mean": 4.715980483214218,
+        "ET_std": 1.626873538561905,
+        "variance_note": ""
+      },
+      "CASDS": {
+        "Makespan_mean": 1.8981,
+        "Makespan_std": 0.038183766184073445,
+        "Utilization_mean": 23.027437473440276,
+        "Utilization_std": 0.5683934288442637,
+        "ET_mean": 8.950641645047131,
+        "ET_std": 0.5650094065650829,
+        "variance_note": ""
+      },
+      "_runs": [
+        {
+          "run_idx": 0,
+          "seed": 5250,
+          "schedulers": {
+            "ADS": {
+              "DSR": 44.0,
+              "Makespan_s": 2.0682,
+              "Utilization": 21.529311999285888,
+              "ET": 5.318634561454405
+            },
+            "ASDYS": {
+              "DSR": 60.0,
+              "Makespan_s": 1.9351999999999998,
+              "Utilization": 23.307072216745635,
+              "ET": 7.751136833402233
+            },
+            "HetSched": {
+              "DSR": 56.00000000000001,
+              "Makespan_s": 1.9631999999999998,
+              "Utilization": 22.974656761331573,
+              "ET": 7.131214343928281
+            },
+            "TD_ADS": {
+              "DSR": 24.0,
+              "Makespan_s": 1.9631999999999998,
+              "Utilization": 22.974656761331573,
+              "ET": 3.0562347188264063
+            },
+            "ULS": {
+              "DSR": 28.000000000000004,
+              "Makespan_s": 1.9631999999999998,
+              "Utilization": 22.974656761331573,
+              "ET": 3.5656071719641407
+            },
+            "CASDS": {
+              "DSR": 72.0,
+              "Makespan_s": 1.9250999999999998,
+              "Utilization": 23.42935232135793,
+              "ET": 9.350163627863488
+            }
+          }
+        },
+        {
+          "run_idx": 1,
+          "seed": 5251,
+          "schedulers": {
+            "ADS": {
+              "DSR": 36.0,
+              "Makespan_s": 1.8751,
+              "Utilization": 22.45418705874148,
+              "ET": 4.799744013652605
+            },
+            "ASDYS": {
+              "DSR": 36.0,
+              "Makespan_s": 1.9250999999999998,
+              "Utilization": 21.99086560937893,
+              "ET": 4.675081813931744
+            },
+            "HetSched": {
+              "DSR": 52.0,
+              "Makespan_s": 1.8760999999999999,
+              "Utilization": 22.565223274140706,
+              "ET": 6.9292681626778965
+            },
+            "TD_ADS": {
+              "DSR": 44.0,
+              "Makespan_s": 1.8751,
+              "Utilization": 22.577257418065905,
+              "ET": 5.866353794464295
+            },
+            "ULS": {
+              "DSR": 44.0,
+              "Makespan_s": 1.8751,
+              "Utilization": 22.577257418065905,
+              "ET": 5.866353794464295
+            },
+            "CASDS": {
+              "DSR": 64.0,
+              "Makespan_s": 1.8711,
+              "Utilization": 22.625522625522624,
+              "ET": 8.551119662230773
+            }
+          }
+        }
+      ]
+    },
+    "lambda_30": {
+      "ADS": {
+        "Makespan_mean": 1.9455999999999998,
+        "Makespan_std": 0.2354665581351203,
+        "Utilization_mean": 22.655400344639204,
+        "Utilization_std": 0.17543555230363295,
+        "ET_mean": 4.5118380257853055,
+        "ET_std": 2.363240582199609,
+        "variance_note": ""
+      },
+      "ASDYS": {
+        "Makespan_mean": 1.9250999999999998,
+        "Makespan_std": 0.2715290039756342,
+        "Utilization_mean": 23.097542987205262,
+        "Utilization_std": 0.8759738869420278,
+        "ET_mean": 4.302036483961019,
+        "ET_std": 2.076024521480944,
+        "variance_note": ""
+      },
+      "HetSched": {
+        "Makespan_mean": 1.9250999999999998,
+        "Makespan_std": 0.2715290039756342,
+        "Utilization_mean": 23.124793616694806,
+        "Utilization_std": 0.837435677134711,
+        "ET_mean": 5.955241339659852,
+        "ET_std": 0.26196020682940196,
+        "variance_note": ""
+      },
+      "TD_ADS": {
+        "Makespan_mean": 1.9225999999999999,
+        "Makespan_std": 0.2679934700697015,
+        "Utilization_mean": 23.151464509610133,
+        "Utilization_std": 0.7997173386532553,
+        "ET_mean": 3.151389542571284,
+        "ET_std": 0.43927588632843406,
+        "variance_note": ""
+      },
+      "ULS": {
+        "Makespan_mean": 1.9225999999999999,
+        "Makespan_std": 0.2679934700697015,
+        "Utilization_mean": 23.151464509610133,
+        "Utilization_std": 0.7997173386532553,
+        "ET_mean": 3.151389542571284,
+        "ET_std": 0.43927588632843406,
+        "variance_note": ""
+      },
+      "CASDS": {
+        "Makespan_mean": 1.9346499999999998,
+        "Makespan_std": 0.2523664102054788,
+        "Utilization_mean": 22.990140975489645,
+        "Utilization_std": 0.5866873037867305,
+        "ET_mean": 6.396343920200058,
+        "ET_std": 0.993105498334174,
+        "variance_note": ""
+      },
+      "_runs": [
+        {
+          "run_idx": 0,
+          "seed": 5300,
+          "schedulers": {
+            "ADS": {
+              "DSR": 44.0,
+              "Makespan_s": 1.7791,
+              "Utilization": 22.77945201333431,
+              "ET": 6.1829014670338935
+            },
+            "ASDYS": {
+              "DSR": 40.0,
+              "Makespan_s": 1.7330999999999999,
+              "Utilization": 23.716950062804308,
+              "ET": 5.770007501009752
+            },
+            "HetSched": {
+              "DSR": 40.0,
+              "Makespan_s": 1.7330999999999999,
+              "Utilization": 23.716950062804308,
+              "ET": 5.770007501009752
+            },
+            "TD_ADS": {
+              "DSR": 24.0,
+              "Makespan_s": 1.7330999999999999,
+              "Utilization": 23.716950062804308,
+              "ET": 3.462004500605851
+            },
+            "ULS": {
+              "DSR": 24.0,
+              "Makespan_s": 1.7330999999999999,
+              "Utilization": 23.716950062804308,
+              "ET": 3.462004500605851
+            },
+            "CASDS": {
+              "DSR": 40.0,
+              "Makespan_s": 1.7561999999999998,
+              "Utilization": 23.404991546433294,
+              "ET": 5.694112287894318
+            }
+          }
+        },
+        {
+          "run_idx": 1,
+          "seed": 5301,
+          "schedulers": {
+            "ADS": {
+              "DSR": 24.0,
+              "Makespan_s": 2.1121,
+              "Utilization": 22.5313486759441,
+              "ET": 2.8407745845367174
+            },
+            "ASDYS": {
+              "DSR": 24.0,
+              "Makespan_s": 2.1170999999999998,
+              "Utilization": 22.478135911606216,
+              "ET": 2.834065466912286
+            },
+            "HetSched": {
+              "DSR": 52.0,
+              "Makespan_s": 2.1170999999999998,
+              "Utilization": 22.532637170585303,
+              "ET": 6.140475178309953
+            },
+            "TD_ADS": {
+              "DSR": 24.0,
+              "Makespan_s": 2.1121,
+              "Utilization": 22.585978956415957,
+              "ET": 2.8407745845367174
+            },
+            "ULS": {
+              "DSR": 24.0,
+              "Makespan_s": 2.1121,
+              "Utilization": 22.585978956415957,
+              "ET": 2.8407745845367174
+            },
+            "CASDS": {
+              "DSR": 60.0,
+              "Makespan_s": 2.1130999999999998,
+              "Utilization": 22.575290404545996,
+              "ET": 7.098575552505798
+            }
+          }
+        }
+      ]
+    },
+    "lambda_35": {
+      "ADS": {
+        "Makespan_mean": 1.694182783297277,
+        "Makespan_std": 0.12009107953996616,
+        "Utilization_mean": 23.332788521058326,
+        "Utilization_std": 0.1407754814190429,
+        "ET_mean": 6.568478382601308,
+        "ET_std": 2.1350959414235753,
+        "variance_note": ""
+      },
+      "ASDYS": {
+        "Makespan_mean": 1.714732783297277,
+        "Makespan_std": 0.08395792302133362,
+        "Utilization_mean": 23.00744745707262,
+        "Utilization_std": 0.694271965966459,
+        "ET_mean": 5.879241361451333,
+        "ET_std": 1.9373491022938196,
+        "variance_note": ""
+      },
+      "HetSched": {
+        "Makespan_mean": 1.6997827832972767,
+        "Makespan_std": 0.1280106754892554,
+        "Utilization_mean": 23.295343036710563,
+        "Utilization_std": 0.013579783835306922,
+        "ET_mean": 7.453339095304015,
+        "ET_std": 2.641302713670257,
+        "variance_note": ""
+      },
+      "TD_ADS": {
+        "Makespan_mean": 1.691682783297277,
+        "Makespan_std": 0.11655554563403349,
+        "Utilization_mean": 23.401658633071385,
+        "Utilization_std": 0.13677317442995435,
+        "ET_mean": 5.672372460459303,
+        "ET_std": 1.6447922968776727,
+        "variance_note": ""
+      },
+      "ULS": {
+        "Makespan_mean": 1.691682783297277,
+        "Makespan_std": 0.11796975919640643,
+        "Utilization_mean": 23.402285112310096,
+        "Utilization_std": 0.1171661600692627,
+        "ET_mean": 5.984121316454807,
+        "ET_std": 2.089264317368983,
+        "variance_note": ""
+      },
+      "CASDS": {
+        "Makespan_mean": 1.6921827832972767,
+        "Makespan_std": 0.11726265241521996,
+        "Utilization_mean": 23.39503974628411,
+        "Utilization_std": 0.12741265496757395,
+        "ET_mean": 8.04060234011743,
+        "ET_std": 1.810787068171897,
+        "variance_note": ""
+      },
+      "_runs": [
+        {
+          "run_idx": 0,
+          "seed": 5350,
+          "schedulers": {
+            "ADS": {
+              "DSR": 52.0,
+              "Makespan_s": 1.6092655665945537,
+              "Utilization": 23.23324522352212,
+              "ET": 8.078219201265794
+            },
+            "ASDYS": {
+              "DSR": 48.0,
+              "Makespan_s": 1.6553655665945537,
+              "Utilization": 22.51652304195002,
+              "ET": 7.249154049208964
+            },
+            "HetSched": {
+              "DSR": 60.0,
+              "Makespan_s": 1.6092655665945537,
+              "Utilization": 23.304945393947555,
+              "ET": 9.321022155306684
+            },
+            "TD_ADS": {
+              "DSR": 44.0,
+              "Makespan_s": 1.6092655665945537,
+              "Utilization": 23.304945393947555,
+              "ET": 6.835416247224902
+            },
+            "ULS": {
+              "DSR": 48.0,
+              "Makespan_s": 1.6082655665945538,
+              "Utilization": 23.319436125999534,
+              "ET": 7.461454282957498
+            },
+            "CASDS": {
+              "DSR": 60.0,
+              "Makespan_s": 1.6092655665945537,
+              "Utilization": 23.304945393947555,
+              "ET": 9.321022155306684
+            }
+          }
+        },
+        {
+          "run_idx": 1,
+          "seed": 5351,
+          "schedulers": {
+            "ADS": {
+              "DSR": 36.0,
+              "Makespan_s": 1.7791,
+              "Utilization": 23.43233181859453,
+              "ET": 5.058737563936822
+            },
+            "ASDYS": {
+              "DSR": 32.0,
+              "Makespan_s": 1.7741,
+              "Utilization": 23.498371872195218,
+              "ET": 4.5093286736937035
+            },
+            "HetSched": {
+              "DSR": 40.0,
+              "Makespan_s": 1.7902999999999998,
+              "Utilization": 23.28574067947357,
+              "ET": 5.585656035301347
+            },
+            "TD_ADS": {
+              "DSR": 32.0,
+              "Makespan_s": 1.7741,
+              "Utilization": 23.498371872195218,
+              "ET": 4.5093286736937035
+            },
+            "ULS": {
+              "DSR": 32.0,
+              "Makespan_s": 1.7751,
+              "Utilization": 23.485134098620662,
+              "ET": 4.5067883499521155
+            },
+            "CASDS": {
+              "DSR": 48.0,
+              "Makespan_s": 1.7751,
+              "Utilization": 23.485134098620662,
+              "ET": 6.760182524928173
+            }
+          }
+        }
+      ]
+    },
+    "lambda_40": {
+      "ADS": {
+        "Makespan_mean": 1.8480999999999999,
+        "Makespan_std": 0.10323759005323588,
+        "Utilization_mean": 22.674069576728638,
+        "Utilization_std": 0.07253797649047893,
+        "ET_mean": 3.2302442446861517,
+        "ET_std": 0.5847794660831999,
+        "variance_note": ""
+      },
+      "ASDYS": {
+        "Makespan_mean": 1.84815,
+        "Makespan_std": 0.10316687937511722,
+        "Utilization_mean": 22.640933340492502,
+        "Utilization_std": 0.11939969118162289,
+        "ET_mean": 2.9485065040732987,
+        "ET_std": 0.9832167998902493,
+        "variance_note": ""
+      },
+      "HetSched": {
+        "Makespan_mean": 1.8480999999999999,
+        "Makespan_std": 0.10323759005323588,
+        "Utilization_mean": 22.736601325988474,
+        "Utilization_std": 0.06904486080658981,
+        "ET_mean": 3.2516509615115705,
+        "ET_std": 0.18164201556232995,
+        "variance_note": ""
+      },
+      "TD_ADS": {
+        "Makespan_mean": 1.8480999999999999,
+        "Makespan_std": 0.10323759005323588,
+        "Utilization_mean": 22.736601325988474,
+        "Utilization_std": 0.06904486080658981,
+        "ET_mean": 2.991383406464983,
+        "ET_std": 0.5497159217549006,
+        "variance_note": ""
+      },
+      "ULS": {
+        "Makespan_mean": 1.8506,
+        "Makespan_std": 0.09970205614730306,
+        "Utilization_mean": 22.70473825756998,
+        "Utilization_std": 0.1141060443028477,
+        "ET_mean": 2.7057532575092162,
+        "ET_std": 0.145773891279008,
+        "variance_note": ""
+      },
+      "CASDS": {
+        "Makespan_mean": 1.8500999999999999,
+        "Makespan_std": 0.10606601717798207,
+        "Utilization_mean": 22.712929388514816,
+        "Utilization_std": 0.03556768578369472,
+        "ET_mean": 5.695684664998604,
+        "ET_std": 0.7087321597236143,
+        "variance_note": ""
+      },
+      "_runs": [
+        {
+          "run_idx": 0,
+          "seed": 5400,
+          "schedulers": {
+            "ADS": {
+              "DSR": 20.0,
+              "Makespan_s": 1.7751,
+              "Utilization": 22.62277748165867,
+              "ET": 2.8167427187200724
+            },
+            "ASDYS": {
+              "DSR": 16.0,
+              "Makespan_s": 1.7752,
+              "Utilization": 22.556505009186395,
+              "ET": 2.253267237494367
+            },
+            "HetSched": {
+              "DSR": 24.0,
+              "Makespan_s": 1.7751,
+              "Utilization": 22.687779236706053,
+              "ET": 3.3800912624640866
+            },
+            "TD_ADS": {
+              "DSR": 24.0,
+              "Makespan_s": 1.7751,
+              "Utilization": 22.687779236706053,
+              "ET": 3.3800912624640866
+            },
+            "ULS": {
+              "DSR": 20.0,
+              "Makespan_s": 1.7801,
+              "Utilization": 22.624053099869062,
+              "ET": 2.8088309645525533
+            },
+            "CASDS": {
+              "DSR": 44.0,
+              "Makespan_s": 1.7751,
+              "Utilization": 22.687779236706053,
+              "ET": 6.196833981184159
+            }
+          }
+        },
+        {
+          "run_idx": 1,
+          "seed": 5401,
+          "schedulers": {
+            "ADS": {
+              "DSR": 28.000000000000004,
+              "Makespan_s": 1.9210999999999998,
+              "Utilization": 22.725361671798606,
+              "ET": 3.643745770652231
+            },
+            "ASDYS": {
+              "DSR": 28.000000000000004,
+              "Makespan_s": 1.9210999999999998,
+              "Utilization": 22.725361671798606,
+              "ET": 3.643745770652231
+            },
+            "HetSched": {
+              "DSR": 24.0,
+              "Makespan_s": 1.9210999999999998,
+              "Utilization": 22.785423415270895,
+              "ET": 3.123210660559055
+            },
+            "TD_ADS": {
+              "DSR": 20.0,
+              "Makespan_s": 1.9210999999999998,
+              "Utilization": 22.785423415270895,
+              "ET": 2.602675550465879
+            },
+            "ULS": {
+              "DSR": 20.0,
+              "Makespan_s": 1.9210999999999998,
+              "Utilization": 22.785423415270895,
+              "ET": 2.602675550465879
+            },
+            "CASDS": {
+              "DSR": 40.0,
+              "Makespan_s": 1.9250999999999998,
+              "Utilization": 22.73807954032358,
+              "ET": 5.194535348813049
+            }
+          }
+        }
+      ]
+    }
+  },
+  "overall_summary": {
+    "ADS": {
+      "Makespan_mean": 1.9141989051095778,
+      "Makespan_std": 0.1904437051086375,
+      "Utilization_mean": 22.54091806507935,
+      "Utilization_std": 0.5682284209684232,
+      "ET_mean": 4.812958834679819,
+      "ET_std": 1.597703042784449,
+      "variance_note": ""
+    },
+    "ASDYS": {
+      "Makespan_mean": 1.901308905109578,
+      "Makespan_std": 0.18539632634587774,
+      "Utilization_mean": 22.733642860253916,
+      "Utilization_std": 0.6471599656855448,
+      "ET_mean": 5.01841099190978,
+      "ET_std": 1.7877214743894019,
+      "variance_note": ""
+    },
+    "HetSched": {
+      "Makespan_mean": 1.8916089051095777,
+      "Makespan_std": 0.18252565927534828,
+      "Utilization_mean": 22.916628988803133,
+      "Utilization_std": 0.419545096165249,
+      "ET_mean": 6.19205484653646,
+      "ET_std": 1.868735030026827,
+      "variance_note": ""
+    },
+    "TD_ADS": {
+      "Makespan_mean": 1.8897889051095778,
+      "Makespan_std": 0.18374838772717064,
+      "Utilization_mean": 22.94042495033677,
+      "Utilization_std": 0.44478976503351064,
+      "ET_mean": 4.415866009304584,
+      "ET_std": 1.5425472561138482,
+      "variance_note": ""
+    },
+    "ULS": {
+      "Makespan_mean": 1.8952889051095778,
+      "Makespan_std": 0.18452956054576344,
+      "Utilization_mean": 22.88128134577709,
+      "Utilization_std": 0.47646494145274243,
+      "ET_mean": 4.457206966717628,
+      "ET_std": 1.6606305785426732,
+      "variance_note": ""
+    },
+    "CASDS": {
+      "Makespan_mean": 1.8880889051095777,
+      "Makespan_std": 0.17977715513157427,
+      "Utilization_mean": 22.956402906122907,
+      "Utilization_std": 0.41603741522958676,
+      "ET_mean": 7.57068078027324,
+      "ET_std": 1.5976112681361685,
+      "variance_note": ""
+    }
+  }
+}

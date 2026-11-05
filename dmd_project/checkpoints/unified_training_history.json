@@ -1,0 +1,47 @@
+[
+  {
+    "epoch": 1,
+    "train_loss": 4.0271,
+    "val_loss": 2.172,
+    "gaze_acc": 87.77,
+    "drowsiness_acc": 91.13,
+    "distraction_acc": 85.93,
+    "safety_acc": 84.4
+  },
+  {
+    "epoch": 2,
+    "train_loss": 1.9001,
+    "val_loss": 3.2803,
+    "gaze_acc": 93.88,
+    "drowsiness_acc": 92.66,
+    "distraction_acc": 78.29,
+    "safety_acc": 80.12
+  },
+  {
+    "epoch": 3,
+    "train_loss": 1.5373,
+    "val_loss": 1.0457,
+    "gaze_acc": 93.58,
+    "drowsiness_acc": 92.66,
+    "distraction_acc": 94.8,
+    "safety_acc": 90.21
+  },
+  {
+    "epoch": 4,
+    "train_loss": 1.0733,
+    "val_loss": 0.8716,
+    "gaze_acc": 95.72,
+    "drowsiness_acc": 92.66,
+    "distraction_acc": 95.72,
+    "safety_acc": 90.21
+  },
+  {
+    "epoch": 5,
+    "train_loss": 0.8607,
+    "val_loss": 0.6996,
+    "gaze_acc": 97.86,
+    "drowsiness_acc": 92.35,
+    "distraction_acc": 96.33,
+    "safety_acc": 92.35
+  }
+]

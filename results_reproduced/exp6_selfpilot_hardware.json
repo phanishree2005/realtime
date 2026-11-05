@@ -1,0 +1,1698 @@
+{
+  "metadata": {
+    "num_dags": 25,
+    "num_runs": 2,
+    "lambdas": [
+      5.0,
+      10.0,
+      20.0,
+      30.0,
+      40.0
+    ],
+    "critical_ratios": [
+      0.3,
+      0.6,
+      0.9
+    ],
+    "schedulers": [
+      "ADS",
+      "ASDYS",
+      "HetSched",
+      "TD_ADS",
+      "CASDS"
+    ]
+  },
+  "data": {
+    "rcrit_30": {
+      "lambda_5": {
+        "ADS": {
+          "DSR_mean": 88.0,
+          "DSR_std": 5.656854249492381,
+          "DSR_crit_mean": 100.0,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 3.8135065275728506,
+          "ET_std": 0.16616734404362982,
+          "variance_note": ""
+        },
+        "ASDYS": {
+          "DSR_mean": 100.0,
+          "DSR_std": 0.0,
+          "DSR_crit_mean": 100.0,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 4.34858393697659,
+          "ET_std": 0.46836409008549224,
+          "variance_note": ""
+        },
+        "HetSched": {
+          "DSR_mean": 98.0,
+          "DSR_std": 2.8284271247461903,
+          "DSR_crit_mean": 100.0,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 4.261142912135266,
+          "ET_std": 0.5802760606175712,
+          "variance_note": ""
+        },
+        "TD_ADS": {
+          "DSR_mean": 98.0,
+          "DSR_std": 2.8284271247461903,
+          "DSR_crit_mean": 100.0,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 4.261142912135266,
+          "ET_std": 0.5802760606175712,
+          "variance_note": ""
+        },
+        "CASDS": {
+          "DSR_mean": 100.0,
+          "DSR_std": 0.0,
+          "DSR_crit_mean": 100.0,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 4.34858393697659,
+          "ET_std": 0.46836409008549224,
+          "variance_note": ""
+        },
+        "_runs": [
+          {
+            "run_idx": 0,
+            "seed": 3080,
+            "schedulers": {
+              "ADS": {
+                "DSR": 84.0,
+                "DSR_crit": 100.0,
+                "ET": 3.9310045833578595
+              },
+              "ASDYS": {
+                "DSR": 100.0,
+                "DSR_crit": 100.0,
+                "ET": 4.679767361140309
+              },
+              "HetSched": {
+                "DSR": 100.0,
+                "DSR_crit": 100.0,
+                "ET": 4.671460049558167
+              },
+              "TD_ADS": {
+                "DSR": 100.0,
+                "DSR_crit": 100.0,
+                "ET": 4.671460049558167
+              },
+              "CASDS": {
+                "DSR": 100.0,
+                "DSR_crit": 100.0,
+                "ET": 4.679767361140309
+              }
+            }
+          },
+          {
+            "run_idx": 1,
+            "seed": 3081,
+            "schedulers": {
+              "ADS": {
+                "DSR": 92.0,
+                "DSR_crit": 100.0,
+                "ET": 3.696008471787842
+              },
+              "ASDYS": {
+                "DSR": 100.0,
+                "DSR_crit": 100.0,
+                "ET": 4.017400512812872
+              },
+              "HetSched": {
+                "DSR": 96.0,
+                "DSR_crit": 100.0,
+                "ET": 3.8508257747123658
+              },
+              "TD_ADS": {
+                "DSR": 96.0,
+                "DSR_crit": 100.0,
+                "ET": 3.8508257747123658
+              },
+              "CASDS": {
+                "DSR": 100.0,
+                "DSR_crit": 100.0,
+                "ET": 4.017400512812872
+              }
+            }
+          }
+        ]
+      },
+      "lambda_10": {
+        "ADS": {
+          "DSR_mean": 82.0,
+          "DSR_std": 8.48528137423857,
+          "DSR_crit_mean": 100.0,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 6.032633561629364,
+          "ET_std": 0.4693726389705335,
+          "variance_note": ""
+        },
+        "ASDYS": {
+          "DSR_mean": 100.0,
+          "DSR_std": 0.0,
+          "DSR_crit_mean": 100.0,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 7.3672183191975655,
+          "ET_std": 0.1891530422283653,
+          "variance_note": ""
+        },
+        "HetSched": {
+          "DSR_mean": 96.0,
+          "DSR_std": 5.656854249492381,
+          "DSR_crit_mean": 100.0,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 7.058098766099093,
+          "ET_std": 0.5961634148817221,
+          "variance_note": ""
+        },
+        "TD_ADS": {
+          "DSR_mean": 96.0,
+          "DSR_std": 5.656854249492381,
+          "DSR_crit_mean": 100.0,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 7.058098766099093,
+          "ET_std": 0.5961634148817221,
+          "variance_note": ""
+        },
+        "CASDS": {
+          "DSR_mean": 100.0,
+          "DSR_std": 0.0,
+          "DSR_crit_mean": 100.0,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 7.3672183191975655,
+          "ET_std": 0.1891530422283653,
+          "variance_note": ""
+        },
+        "_runs": [
+          {
+            "run_idx": 0,
+            "seed": 3130,
+            "schedulers": {
+              "ADS": {
+                "DSR": 88.0,
+                "DSR_crit": 100.0,
+                "ET": 6.364530137548853
+              },
+              "ASDYS": {
+                "DSR": 100.0,
+                "DSR_crit": 100.0,
+                "ET": 7.2334669203558235
+              },
+              "HetSched": {
+                "DSR": 92.0,
+                "DSR_crit": 100.0,
+                "ET": 6.636547572740898
+              },
+              "TD_ADS": {
+                "DSR": 92.0,
+                "DSR_crit": 100.0,
+                "ET": 6.636547572740898
+              },
+              "CASDS": {
+                "DSR": 100.0,
+                "DSR_crit": 100.0,
+                "ET": 7.2334669203558235
+              }
+            }
+          },
+          {
+            "run_idx": 1,
+            "seed": 3131,
+            "schedulers": {
+              "ADS": {
+                "DSR": 76.0,
+                "DSR_crit": 100.0,
+                "ET": 5.700736985709875
+              },
+              "ASDYS": {
+                "DSR": 100.0,
+                "DSR_crit": 100.0,
+                "ET": 7.5009697180393085
+              },
+              "HetSched": {
+                "DSR": 100.0,
+                "DSR_crit": 100.0,
+                "ET": 7.479649959457287
+              },
+              "TD_ADS": {
+                "DSR": 100.0,
+                "DSR_crit": 100.0,
+                "ET": 7.479649959457287
+              },
+              "CASDS": {
+                "DSR": 100.0,
+                "DSR_crit": 100.0,
+                "ET": 7.5009697180393085
+              }
+            }
+          }
+        ]
+      },
+      "lambda_20": {
+        "ADS": {
+          "DSR_mean": 50.0,
+          "DSR_std": 14.142135623730951,
+          "DSR_crit_mean": 100.0,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 8.082265876266487,
+          "ET_std": 1.9164116706433918,
+          "variance_note": ""
+        },
+        "ASDYS": {
+          "DSR_mean": 96.0,
+          "DSR_std": 5.656854249492381,
+          "DSR_crit_mean": 100.0,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 16.34210421316456,
+          "ET_std": 0.8671226033639444,
+          "variance_note": ""
+        },
+        "HetSched": {
+          "DSR_mean": 92.0,
+          "DSR_std": 5.656854249492381,
+          "DSR_crit_mean": 94.44444444444444,
+          "DSR_crit_std": 7.8567420131838634,
+          "ET_mean": 15.513709219289035,
+          "ET_std": 0.712235890583478,
+          "variance_note": ""
+        },
+        "TD_ADS": {
+          "DSR_mean": 92.0,
+          "DSR_std": 5.656854249492381,
+          "DSR_crit_mean": 94.44444444444444,
+          "DSR_crit_std": 7.8567420131838634,
+          "ET_mean": 15.513709219289035,
+          "ET_std": 0.712235890583478,
+          "variance_note": ""
+        },
+        "CASDS": {
+          "DSR_mean": 100.0,
+          "DSR_std": 0.0,
+          "DSR_crit_mean": 100.0,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 17.040425369879216,
+          "ET_std": 1.8546978540818801,
+          "variance_note": ""
+        },
+        "_runs": [
+          {
+            "run_idx": 0,
+            "seed": 3230,
+            "schedulers": {
+              "ADS": {
+                "DSR": 60.0,
+                "DSR_crit": 100.0,
+                "ET": 9.437373564123469
+              },
+              "ASDYS": {
+                "DSR": 100.0,
+                "DSR_crit": 100.0,
+                "ET": 15.728955940205783
+              },
+              "HetSched": {
+                "DSR": 96.0,
+                "DSR_crit": 88.88888888888889,
+                "ET": 15.010082391253018
+              },
+              "TD_ADS": {
+                "DSR": 96.0,
+                "DSR_crit": 88.88888888888889,
+                "ET": 15.010082391253018
+              },
+              "CASDS": {
+                "DSR": 100.0,
+                "DSR_crit": 100.0,
+                "ET": 15.728955940205783
+              }
+            }
+          },
+          {
+            "run_idx": 1,
+            "seed": 3231,
+            "schedulers": {
+              "ADS": {
+                "DSR": 40.0,
+                "DSR_crit": 100.0,
+                "ET": 6.727158188409503
+              },
+              "ASDYS": {
+                "DSR": 92.0,
+                "DSR_crit": 100.0,
+                "ET": 16.95525248612334
+              },
+              "HetSched": {
+                "DSR": 88.0,
+                "DSR_crit": 100.0,
+                "ET": 16.017336047325053
+              },
+              "TD_ADS": {
+                "DSR": 88.0,
+                "DSR_crit": 100.0,
+                "ET": 16.017336047325053
+              },
+              "CASDS": {
+                "DSR": 100.0,
+                "DSR_crit": 100.0,
+                "ET": 18.351894799552653
+              }
+            }
+          }
+        ]
+      },
+      "lambda_30": {
+        "ADS": {
+          "DSR_mean": 40.0,
+          "DSR_std": 5.656854249492381,
+          "DSR_crit_mean": 90.9090909090909,
+          "DSR_crit_std": 12.856486930664495,
+          "ET_mean": 8.203825858123004,
+          "ET_std": 1.4133465773738847,
+          "variance_note": ""
+        },
+        "ASDYS": {
+          "DSR_mean": 98.0,
+          "DSR_std": 2.8284271247461903,
+          "DSR_crit_mean": 95.45454545454545,
+          "DSR_crit_std": 6.428243465332252,
+          "ET_mean": 22.65802473567896,
+          "ET_std": 1.4495534552620224,
+          "variance_note": ""
+        },
+        "HetSched": {
+          "DSR_mean": 84.0,
+          "DSR_std": 0.0,
+          "DSR_crit_mean": 90.9090909090909,
+          "DSR_crit_std": 12.856486930664495,
+          "ET_mean": 19.246873264491327,
+          "ET_std": 0.6769565063248623,
+          "variance_note": ""
+        },
+        "TD_ADS": {
+          "DSR_mean": 82.0,
+          "DSR_std": 2.8284271247461903,
+          "DSR_crit_mean": 86.36363636363637,
+          "DSR_crit_std": 19.284730395996746,
+          "ET_mean": 18.80001153286512,
+          "ET_std": 1.3089144276961677,
+          "variance_note": ""
+        },
+        "CASDS": {
+          "DSR_mean": 100.0,
+          "DSR_std": 0.0,
+          "DSR_crit_mean": 100.0,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 23.108712978549185,
+          "ET_std": 0.8121840297928511,
+          "variance_note": ""
+        },
+        "_runs": [
+          {
+            "run_idx": 0,
+            "seed": 3330,
+            "schedulers": {
+              "ADS": {
+                "DSR": 36.0,
+                "DSR_crit": 81.81818181818183,
+                "ET": 7.204438909095132
+              },
+              "ASDYS": {
+                "DSR": 96.0,
+                "DSR_crit": 90.9090909090909,
+                "ET": 21.633035657770794
+              },
+              "HetSched": {
+                "DSR": 84.0,
+                "DSR_crit": 81.81818181818183,
+                "ET": 18.76819272830066
+              },
+              "TD_ADS": {
+                "DSR": 80.0,
+                "DSR_crit": 72.72727272727273,
+                "ET": 17.87446926504825
+              },
+              "CASDS": {
+                "DSR": 100.0,
+                "DSR_crit": 100.0,
+                "ET": 22.534412143511243
+              }
+            }
+          },
+          {
+            "run_idx": 1,
+            "seed": 3331,
+            "schedulers": {
+              "ADS": {
+                "DSR": 44.0,
+                "DSR_crit": 100.0,
+                "ET": 9.203212807150875
+              },
+              "ASDYS": {
+                "DSR": 100.0,
+                "DSR_crit": 100.0,
+                "ET": 23.683013813587127
+              },
+              "HetSched": {
+                "DSR": 84.0,
+                "DSR_crit": 100.0,
+                "ET": 19.72555380068199
+              },
+              "TD_ADS": {
+                "DSR": 84.0,
+                "DSR_crit": 100.0,
+                "ET": 19.72555380068199
+              },
+              "CASDS": {
+                "DSR": 100.0,
+                "DSR_crit": 100.0,
+                "ET": 23.683013813587127
+              }
+            }
+          }
+        ]
+      },
+      "lambda_40": {
+        "ADS": {
+          "DSR_mean": 32.0,
+          "DSR_std": 0.0,
+          "DSR_crit_mean": 94.44444444444444,
+          "DSR_crit_std": 7.8567420131838634,
+          "ET_mean": 7.285010581736028,
+          "ET_std": 0.018260380791411984,
+          "variance_note": ""
+        },
+        "ASDYS": {
+          "DSR_mean": 50.0,
+          "DSR_std": 14.142135623730951,
+          "DSR_crit_mean": 100.0,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 15.28248102397778,
+          "ET_std": 3.5194286059676703,
+          "variance_note": ""
+        },
+        "HetSched": {
+          "DSR_mean": 52.0,
+          "DSR_std": 16.97056274847714,
+          "DSR_crit_mean": 88.88888888888889,
+          "DSR_crit_std": 15.713484026367716,
+          "ET_mean": 17.153849908915433,
+          "ET_std": 5.3019208292120155,
+          "variance_note": ""
+        },
+        "TD_ADS": {
+          "DSR_mean": 44.0,
+          "DSR_std": 11.313708498984761,
+          "DSR_crit_mean": 65.27777777777777,
+          "DSR_crit_std": 13.749298523071756,
+          "ET_mean": 14.637803299152287,
+          "ET_std": 3.3174365650557704,
+          "variance_note": ""
+        },
+        "CASDS": {
+          "DSR_mean": 94.0,
+          "DSR_std": 2.8284271247461903,
+          "DSR_crit_mean": 100.0,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 33.40074144703463,
+          "ET_std": 2.3367030773531385,
+          "variance_note": ""
+        },
+        "_runs": [
+          {
+            "run_idx": 0,
+            "seed": 3430,
+            "schedulers": {
+              "ADS": {
+                "DSR": 32.0,
+                "DSR_crit": 100.0,
+                "ET": 7.297922620820684
+              },
+              "ASDYS": {
+                "DSR": 40.0,
+                "DSR_crit": 100.0,
+                "ET": 12.793869190796123
+              },
+              "HetSched": {
+                "DSR": 40.0,
+                "DSR_crit": 100.0,
+                "ET": 13.404825737265416
+              },
+              "TD_ADS": {
+                "DSR": 36.0,
+                "DSR_crit": 75.0,
+                "ET": 12.292021407845144
+              },
+              "CASDS": {
+                "DSR": 96.0,
+                "DSR_crit": 100.0,
+                "ET": 35.053040038650515
+              }
+            }
+          },
+          {
+            "run_idx": 1,
+            "seed": 3431,
+            "schedulers": {
+              "ADS": {
+                "DSR": 32.0,
+                "DSR_crit": 88.88888888888889,
+                "ET": 7.2720985426513725
+              },
+              "ASDYS": {
+                "DSR": 60.0,
+                "DSR_crit": 100.0,
+                "ET": 17.771092857159438
+              },
+              "HetSched": {
+                "DSR": 64.0,
+                "DSR_crit": 77.77777777777779,
+                "ET": 20.902874080565454
+              },
+              "TD_ADS": {
+                "DSR": 52.0,
+                "DSR_crit": 55.55555555555556,
+                "ET": 16.98358519045943
+              },
+              "CASDS": {
+                "DSR": 92.0,
+                "DSR_crit": 100.0,
+                "ET": 31.74844285541876
+              }
+            }
+          }
+        ]
+      }
+    },
+    "rcrit_60": {
+      "lambda_5": {
+        "ADS": {
+          "DSR_mean": 88.0,
+          "DSR_std": 5.656854249492381,
+          "DSR_crit_mean": 100.0,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 4.534501871525984,
+          "ET_std": 1.5973156453247708,
+          "variance_note": ""
+        },
+        "ASDYS": {
+          "DSR_mean": 100.0,
+          "DSR_std": 0.0,
+          "DSR_crit_mean": 100.0,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 5.244293002175407,
+          "ET_std": 2.119246962030699,
+          "variance_note": ""
+        },
+        "HetSched": {
+          "DSR_mean": 100.0,
+          "DSR_std": 0.0,
+          "DSR_crit_mean": 100.0,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 5.230639123732993,
+          "ET_std": 2.1141855795052167,
+          "variance_note": ""
+        },
+        "TD_ADS": {
+          "DSR_mean": 100.0,
+          "DSR_std": 0.0,
+          "DSR_crit_mean": 100.0,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 5.230639123732993,
+          "ET_std": 2.1141855795052167,
+          "variance_note": ""
+        },
+        "CASDS": {
+          "DSR_mean": 100.0,
+          "DSR_std": 0.0,
+          "DSR_crit_mean": 100.0,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 5.244293002175407,
+          "ET_std": 2.119246962030699,
+          "variance_note": ""
+        },
+        "_runs": [
+          {
+            "run_idx": 0,
+            "seed": 3110,
+            "schedulers": {
+              "ADS": {
+                "DSR": 84.0,
+                "DSR_crit": 100.0,
+                "ET": 5.663974596030496
+              },
+              "ASDYS": {
+                "DSR": 100.0,
+                "DSR_crit": 100.0,
+                "ET": 6.742826900036304
+              },
+              "HetSched": {
+                "DSR": 100.0,
+                "DSR_crit": 100.0,
+                "ET": 6.725594083687942
+              },
+              "TD_ADS": {
+                "DSR": 100.0,
+                "DSR_crit": 100.0,
+                "ET": 6.725594083687942
+              },
+              "CASDS": {
+                "DSR": 100.0,
+                "DSR_crit": 100.0,
+                "ET": 6.742826900036304
+              }
+            }
+          },
+          {
+            "run_idx": 1,
+            "seed": 3111,
+            "schedulers": {
+              "ADS": {
+                "DSR": 92.0,
+                "DSR_crit": 100.0,
+                "ET": 3.4050291470214726
+              },
+              "ASDYS": {
+                "DSR": 100.0,
+                "DSR_crit": 100.0,
+                "ET": 3.74575910431451
+              },
+              "HetSched": {
+                "DSR": 100.0,
+                "DSR_crit": 100.0,
+                "ET": 3.735684163778043
+              },
+              "TD_ADS": {
+                "DSR": 100.0,
+                "DSR_crit": 100.0,
+                "ET": 3.735684163778043
+              },
+              "CASDS": {
+                "DSR": 100.0,
+                "DSR_crit": 100.0,
+                "ET": 3.74575910431451
+              }
+            }
+          }
+        ]
+      },
+      "lambda_10": {
+        "ADS": {
+          "DSR_mean": 70.0,
+          "DSR_std": 2.8284271247461903,
+          "DSR_crit_mean": 100.0,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 6.557331546867241,
+          "ET_std": 1.3556400265349315,
+          "variance_note": ""
+        },
+        "ASDYS": {
+          "DSR_mean": 100.0,
+          "DSR_std": 0.0,
+          "DSR_crit_mean": 100.0,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 9.336112005095698,
+          "ET_std": 1.5593927174087419,
+          "variance_note": ""
+        },
+        "HetSched": {
+          "DSR_mean": 96.0,
+          "DSR_std": 0.0,
+          "DSR_crit_mean": 100.0,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 8.930544019663058,
+          "ET_std": 1.4864515254816473,
+          "variance_note": ""
+        },
+        "TD_ADS": {
+          "DSR_mean": 96.0,
+          "DSR_std": 0.0,
+          "DSR_crit_mean": 100.0,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 8.930544019663058,
+          "ET_std": 1.4864515254816473,
+          "variance_note": ""
+        },
+        "CASDS": {
+          "DSR_mean": 100.0,
+          "DSR_std": 0.0,
+          "DSR_crit_mean": 100.0,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 9.336112005095698,
+          "ET_std": 1.5593927174087419,
+          "variance_note": ""
+        },
+        "_runs": [
+          {
+            "run_idx": 0,
+            "seed": 3160,
+            "schedulers": {
+              "ADS": {
+                "DSR": 72.0,
+                "DSR_crit": 100.0,
+                "ET": 7.515913802478003
+              },
+              "ASDYS": {
+                "DSR": 100.0,
+                "DSR_crit": 100.0,
+                "ET": 10.438769170108337
+              },
+              "HetSched": {
+                "DSR": 96.0,
+                "DSR_crit": 100.0,
+                "ET": 9.98162397323622
+              },
+              "TD_ADS": {
+                "DSR": 96.0,
+                "DSR_crit": 100.0,
+                "ET": 9.98162397323622
+              },
+              "CASDS": {
+                "DSR": 100.0,
+                "DSR_crit": 100.0,
+                "ET": 10.438769170108337
+              }
+            }
+          },
+          {
+            "run_idx": 1,
+            "seed": 3161,
+            "schedulers": {
+              "ADS": {
+                "DSR": 68.0,
+                "DSR_crit": 100.0,
+                "ET": 5.59874929125648
+              },
+              "ASDYS": {
+                "DSR": 100.0,
+                "DSR_crit": 100.0,
+                "ET": 8.23345484008306
+              },
+              "HetSched": {
+                "DSR": 96.0,
+                "DSR_crit": 100.0,
+                "ET": 7.879464066089898
+              },
+              "TD_ADS": {
+                "DSR": 96.0,
+                "DSR_crit": 100.0,
+                "ET": 7.879464066089898
+              },
+              "CASDS": {
+                "DSR": 100.0,
+                "DSR_crit": 100.0,
+                "ET": 8.23345484008306
+              }
+            }
+          }
+        ]
+      },
+      "lambda_20": {
+        "ADS": {
+          "DSR_mean": 62.0,
+          "DSR_std": 25.45584412271571,
+          "DSR_crit_mean": 89.28571428571428,
+          "DSR_crit_std": 15.152288168283162,
+          "ET_mean": 10.775116547074,
+          "ET_std": 3.707387370202078,
+          "variance_note": ""
+        },
+        "ASDYS": {
+          "DSR_mean": 96.0,
+          "DSR_std": 5.656854249492381,
+          "DSR_crit_mean": 100.0,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 19.54170057559825,
+          "ET_std": 0.6788413650526118,
+          "variance_note": ""
+        },
+        "HetSched": {
+          "DSR_mean": 92.0,
+          "DSR_std": 5.656854249492381,
+          "DSR_crit_mean": 93.92857142857143,
+          "DSR_crit_std": 1.5152288168283132,
+          "ET_mean": 18.593322866797653,
+          "ET_std": 0.6602447819209963,
+          "variance_note": ""
+        },
+        "TD_ADS": {
+          "DSR_mean": 92.0,
+          "DSR_std": 5.656854249492381,
+          "DSR_crit_mean": 93.92857142857143,
+          "DSR_crit_std": 1.5152288168283132,
+          "ET_mean": 18.593322866797653,
+          "ET_std": 0.6602447819209963,
+          "variance_note": ""
+        },
+        "CASDS": {
+          "DSR_mean": 96.0,
+          "DSR_std": 5.656854249492381,
+          "DSR_crit_mean": 100.0,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 19.54605974498853,
+          "ET_std": 0.6850061615250256,
+          "variance_note": ""
+        },
+        "_runs": [
+          {
+            "run_idx": 0,
+            "seed": 3260,
+            "schedulers": {
+              "ADS": {
+                "DSR": 80.0,
+                "DSR_crit": 100.0,
+                "ET": 13.39663529702925
+              },
+              "ASDYS": {
+                "DSR": 100.0,
+                "DSR_crit": 100.0,
+                "ET": 19.061687243019616
+              },
+              "HetSched": {
+                "DSR": 96.0,
+                "DSR_crit": 95.0,
+                "ET": 18.126459304258283
+              },
+              "TD_ADS": {
+                "DSR": 96.0,
+                "DSR_crit": 95.0,
+                "ET": 18.126459304258283
+              },
+              "CASDS": {
+                "DSR": 100.0,
+                "DSR_crit": 100.0,
+                "ET": 19.061687243019616
+              }
+            }
+          },
+          {
+            "run_idx": 1,
+            "seed": 3261,
+            "schedulers": {
+              "ADS": {
+                "DSR": 44.0,
+                "DSR_crit": 78.57142857142857,
+                "ET": 8.15359779711875
+              },
+              "ASDYS": {
+                "DSR": 92.0,
+                "DSR_crit": 100.0,
+                "ET": 20.021713908176885
+              },
+              "HetSched": {
+                "DSR": 88.0,
+                "DSR_crit": 92.85714285714286,
+                "ET": 19.060186429337023
+              },
+              "TD_ADS": {
+                "DSR": 88.0,
+                "DSR_crit": 92.85714285714286,
+                "ET": 19.060186429337023
+              },
+              "CASDS": {
+                "DSR": 92.0,
+                "DSR_crit": 100.0,
+                "ET": 20.030432246957442
+              }
+            }
+          }
+        ]
+      },
+      "lambda_30": {
+        "ADS": {
+          "DSR_mean": 56.0,
+          "DSR_std": 5.656854249492381,
+          "DSR_crit_mean": 93.33333333333334,
+          "DSR_crit_std": 9.42809041582063,
+          "ET_mean": 10.834800268165612,
+          "ET_std": 1.4730356336357986,
+          "variance_note": ""
+        },
+        "ASDYS": {
+          "DSR_mean": 82.0,
+          "DSR_std": 14.142135623730951,
+          "DSR_crit_mean": 85.12820512820514,
+          "DSR_crit_std": 11.603803588702307,
+          "ET_mean": 18.84295977092566,
+          "ET_std": 3.19565654561693,
+          "variance_note": ""
+        },
+        "HetSched": {
+          "DSR_mean": 78.0,
+          "DSR_std": 14.142135623730951,
+          "DSR_crit_mean": 85.12820512820514,
+          "DSR_crit_std": 11.603803588702307,
+          "ET_mean": 17.73208082418588,
+          "ET_std": 3.030715662868037,
+          "variance_note": ""
+        },
+        "TD_ADS": {
+          "DSR_mean": 70.0,
+          "DSR_std": 8.48528137423857,
+          "DSR_crit_mean": 81.7948717948718,
+          "DSR_crit_std": 6.889758380791997,
+          "ET_mean": 15.879863439197319,
+          "ET_std": 1.7081219828946648,
+          "variance_note": ""
+        },
+        "CASDS": {
+          "DSR_mean": 92.0,
+          "DSR_std": 5.656854249492381,
+          "DSR_crit_mean": 96.15384615384616,
+          "DSR_crit_std": 5.439282932204213,
+          "ET_mean": 21.185740202313255,
+          "ET_std": 1.1800136340998046,
+          "variance_note": ""
+        },
+        "_runs": [
+          {
+            "run_idx": 0,
+            "seed": 3360,
+            "schedulers": {
+              "ADS": {
+                "DSR": 60.0,
+                "DSR_crit": 100.0,
+                "ET": 11.876393753638908
+              },
+              "ASDYS": {
+                "DSR": 72.0,
+                "DSR_crit": 76.92307692307693,
+                "ET": 16.583289357176753
+              },
+              "HetSched": {
+                "DSR": 68.0,
+                "DSR_crit": 76.92307692307693,
+                "ET": 15.589041227123609
+              },
+              "TD_ADS": {
+                "DSR": 64.0,
+                "DSR_crit": 76.92307692307693,
+                "ET": 14.67203880199869
+              },
+              "CASDS": {
+                "DSR": 88.0,
+                "DSR_crit": 92.3076923076923,
+                "ET": 20.351344559748703
+              }
+            }
+          },
+          {
+            "run_idx": 1,
+            "seed": 3361,
+            "schedulers": {
+              "ADS": {
+                "DSR": 52.0,
+                "DSR_crit": 86.66666666666667,
+                "ET": 9.793206782692316
+              },
+              "ASDYS": {
+                "DSR": 92.0,
+                "DSR_crit": 93.33333333333333,
+                "ET": 21.10263018467457
+              },
+              "HetSched": {
+                "DSR": 88.0,
+                "DSR_crit": 93.33333333333333,
+                "ET": 19.875120421248152
+              },
+              "TD_ADS": {
+                "DSR": 76.0,
+                "DSR_crit": 86.66666666666667,
+                "ET": 17.08768807639595
+              },
+              "CASDS": {
+                "DSR": 96.0,
+                "DSR_crit": 100.0,
+                "ET": 22.02013584487781
+              }
+            }
+          }
+        ]
+      },
+      "lambda_40": {
+        "ADS": {
+          "DSR_mean": 58.0,
+          "DSR_std": 2.828427124746185,
+          "DSR_crit_mean": 96.875,
+          "DSR_crit_std": 4.419417382415922,
+          "ET_mean": 13.883864224481208,
+          "ET_std": 0.8410281005393914,
+          "variance_note": ""
+        },
+        "ASDYS": {
+          "DSR_mean": 54.0,
+          "DSR_std": 2.828427124746195,
+          "DSR_crit_mean": 87.5,
+          "DSR_crit_std": 17.67766952966369,
+          "ET_mean": 16.271195031242296,
+          "ET_std": 2.0787687014540435,
+          "variance_note": ""
+        },
+        "HetSched": {
+          "DSR_mean": 64.0,
+          "DSR_std": 0.0,
+          "DSR_crit_mean": 90.17857142857143,
+          "DSR_crit_std": 3.788072042070793,
+          "ET_mean": 19.71024393522002,
+          "ET_std": 2.3506957821694328,
+          "variance_note": ""
+        },
+        "TD_ADS": {
+          "DSR_mean": 46.0,
+          "DSR_std": 14.142135623730956,
+          "DSR_crit_mean": 55.80357142857143,
+          "DSR_crit_std": 18.30901487000882,
+          "ET_mean": 13.981400850062414,
+          "ET_std": 2.5174769945065347,
+          "variance_note": ""
+        },
+        "CASDS": {
+          "DSR_mean": 84.0,
+          "DSR_std": 0.0,
+          "DSR_crit_mean": 93.75,
+          "DSR_crit_std": 8.838834764831844,
+          "ET_mean": 27.16906632145634,
+          "ET_std": 4.5792956690340425,
+          "variance_note": ""
+        },
+        "_runs": [
+          {
+            "run_idx": 0,
+            "seed": 3460,
+            "schedulers": {
+              "ADS": {
+                "DSR": 56.00000000000001,
+                "DSR_crit": 100.0,
+                "ET": 14.478560897541053
+              },
+              "ASDYS": {
+                "DSR": 56.00000000000001,
+                "DSR_crit": 100.0,
+                "ET": 17.741106476558805
+              },
+              "HetSched": {
+                "DSR": 64.0,
+                "DSR_crit": 92.85714285714286,
+                "ET": 21.372436863298642
+              },
+              "TD_ADS": {
+                "DSR": 36.0,
+                "DSR_crit": 42.857142857142854,
+                "ET": 12.201275795765715
+              },
+              "CASDS": {
+                "DSR": 84.0,
+                "DSR_crit": 100.0,
+                "ET": 30.4071173420885
+              }
+            }
+          },
+          {
+            "run_idx": 1,
+            "seed": 3461,
+            "schedulers": {
+              "ADS": {
+                "DSR": 60.0,
+                "DSR_crit": 93.75,
+                "ET": 13.289167551421363
+              },
+              "ASDYS": {
+                "DSR": 52.0,
+                "DSR_crit": 75.0,
+                "ET": 14.80128358592579
+              },
+              "HetSched": {
+                "DSR": 64.0,
+                "DSR_crit": 87.5,
+                "ET": 18.0480510071414
+              },
+              "TD_ADS": {
+                "DSR": 56.00000000000001,
+                "DSR_crit": 68.75,
+                "ET": 15.761525904359114
+              },
+              "CASDS": {
+                "DSR": 84.0,
+                "DSR_crit": 87.5,
+                "ET": 23.931015300824182
+              }
+            }
+          }
+        ]
+      }
+    },
+    "rcrit_90": {
+      "lambda_5": {
+        "ADS": {
+          "DSR_mean": 92.0,
+          "DSR_std": 5.656854249492381,
+          "DSR_crit_mean": 100.0,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 4.4048755256517795,
+          "ET_std": 0.717181934549333,
+          "variance_note": ""
+        },
+        "ASDYS": {
+          "DSR_mean": 100.0,
+          "DSR_std": 0.0,
+          "DSR_crit_mean": 100.0,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 4.820987750911707,
+          "ET_std": 1.0759762880481396,
+          "variance_note": ""
+        },
+        "HetSched": {
+          "DSR_mean": 100.0,
+          "DSR_std": 0.0,
+          "DSR_crit_mean": 100.0,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 4.812117561873942,
+          "ET_std": 1.0718124276901941,
+          "variance_note": ""
+        },
+        "TD_ADS": {
+          "DSR_mean": 100.0,
+          "DSR_std": 0.0,
+          "DSR_crit_mean": 100.0,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 4.812117561873942,
+          "ET_std": 1.0718124276901941,
+          "variance_note": ""
+        },
+        "CASDS": {
+          "DSR_mean": 100.0,
+          "DSR_std": 0.0,
+          "DSR_crit_mean": 100.0,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 4.821152613098128,
+          "ET_std": 1.075743137708179,
+          "variance_note": ""
+        },
+        "_runs": [
+          {
+            "run_idx": 0,
+            "seed": 3140,
+            "schedulers": {
+              "ADS": {
+                "DSR": 88.0,
+                "DSR_crit": 100.0,
+                "ET": 4.911999734916099
+              },
+              "ASDYS": {
+                "DSR": 100.0,
+                "DSR_crit": 100.0,
+                "ET": 5.581817880586476
+              },
+              "HetSched": {
+                "DSR": 100.0,
+                "DSR_crit": 100.0,
+                "ET": 5.570003397653695
+              },
+              "TD_ADS": {
+                "DSR": 100.0,
+                "DSR_crit": 100.0,
+                "ET": 5.570003397653695
+              },
+              "CASDS": {
+                "DSR": 100.0,
+                "DSR_crit": 100.0,
+                "ET": 5.581817880586476
+              }
+            }
+          },
+          {
+            "run_idx": 1,
+            "seed": 3141,
+            "schedulers": {
+              "ADS": {
+                "DSR": 96.0,
+                "DSR_crit": 100.0,
+                "ET": 3.8977513163874593
+              },
+              "ASDYS": {
+                "DSR": 100.0,
+                "DSR_crit": 100.0,
+                "ET": 4.060157621236937
+              },
+              "HetSched": {
+                "DSR": 100.0,
+                "DSR_crit": 100.0,
+                "ET": 4.05423172609419
+              },
+              "TD_ADS": {
+                "DSR": 100.0,
+                "DSR_crit": 100.0,
+                "ET": 4.05423172609419
+              },
+              "CASDS": {
+                "DSR": 100.0,
+                "DSR_crit": 100.0,
+                "ET": 4.060487345609781
+              }
+            }
+          }
+        ]
+      },
+      "lambda_10": {
+        "ADS": {
+          "DSR_mean": 86.0,
+          "DSR_std": 8.48528137423857,
+          "DSR_crit_mean": 100.0,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 7.69649952607509,
+          "ET_std": 1.0971877067250568,
+          "variance_note": ""
+        },
+        "ASDYS": {
+          "DSR_mean": 100.0,
+          "DSR_std": 0.0,
+          "DSR_crit_mean": 100.0,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 9.055317969133943,
+          "ET_std": 2.1677770641495426,
+          "variance_note": ""
+        },
+        "HetSched": {
+          "DSR_mean": 96.0,
+          "DSR_std": 0.0,
+          "DSR_crit_mean": 97.82608695652175,
+          "DSR_crit_std": 3.0743773095067244,
+          "ET_mean": 8.662969055504622,
+          "ET_std": 2.0690993963672466,
+          "variance_note": ""
+        },
+        "TD_ADS": {
+          "DSR_mean": 96.0,
+          "DSR_std": 0.0,
+          "DSR_crit_mean": 97.82608695652175,
+          "DSR_crit_std": 3.0743773095067244,
+          "ET_mean": 8.662969055504622,
+          "ET_std": 2.0690993963672466,
+          "variance_note": ""
+        },
+        "CASDS": {
+          "DSR_mean": 100.0,
+          "DSR_std": 0.0,
+          "DSR_crit_mean": 100.0,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 9.055317969133943,
+          "ET_std": 2.1677770641495426,
+          "variance_note": ""
+        },
+        "_runs": [
+          {
+            "run_idx": 0,
+            "seed": 3190,
+            "schedulers": {
+              "ADS": {
+                "DSR": 92.0,
+                "DSR_crit": 100.0,
+                "ET": 6.920670658415285
+              },
+              "ASDYS": {
+                "DSR": 100.0,
+                "DSR_crit": 100.0,
+                "ET": 7.522468106973137
+              },
+              "HetSched": {
+                "DSR": 96.0,
+                "DSR_crit": 95.65217391304348,
+                "ET": 7.199894841384349
+              },
+              "TD_ADS": {
+                "DSR": 96.0,
+                "DSR_crit": 95.65217391304348,
+                "ET": 7.199894841384349
+              },
+              "CASDS": {
+                "DSR": 100.0,
+                "DSR_crit": 100.0,
+                "ET": 7.522468106973137
+              }
+            }
+          },
+          {
+            "run_idx": 1,
+            "seed": 3191,
+            "schedulers": {
+              "ADS": {
+                "DSR": 80.0,
+                "DSR_crit": 100.0,
+                "ET": 8.472328393734895
+              },
+              "ASDYS": {
+                "DSR": 100.0,
+                "DSR_crit": 100.0,
+                "ET": 10.58816783129475
+              },
+              "HetSched": {
+                "DSR": 96.0,
+                "DSR_crit": 100.0,
+                "ET": 10.126043269624894
+              },
+              "TD_ADS": {
+                "DSR": 96.0,
+                "DSR_crit": 100.0,
+                "ET": 10.126043269624894
+              },
+              "CASDS": {
+                "DSR": 100.0,
+                "DSR_crit": 100.0,
+                "ET": 10.58816783129475
+              }
+            }
+          }
+        ]
+      },
+      "lambda_20": {
+        "ADS": {
+          "DSR_mean": 82.0,
+          "DSR_std": 2.8284271247461903,
+          "DSR_crit_mean": 97.72727272727272,
+          "DSR_crit_std": 3.214121732666126,
+          "ET_mean": 12.209174552526367,
+          "ET_std": 0.7656994399289402,
+          "variance_note": ""
+        },
+        "ASDYS": {
+          "DSR_mean": 98.0,
+          "DSR_std": 2.8284271247461903,
+          "DSR_crit_mean": 97.72727272727272,
+          "DSR_crit_std": 3.214121732666126,
+          "ET_mean": 16.15970511582784,
+          "ET_std": 2.3119505441763835,
+          "variance_note": ""
+        },
+        "HetSched": {
+          "DSR_mean": 88.0,
+          "DSR_std": 11.313708498984761,
+          "DSR_crit_mean": 92.95454545454545,
+          "DSR_crit_std": 2.8927095593995147,
+          "ET_mean": 14.461891250149762,
+          "ET_std": 3.432288114289769,
+          "variance_note": ""
+        },
+        "TD_ADS": {
+          "DSR_mean": 90.0,
+          "DSR_std": 8.48528137423857,
+          "DSR_crit_mean": 92.95454545454545,
+          "DSR_crit_std": 2.8927095593995147,
+          "ET_mean": 14.762763676388499,
+          "ET_std": 3.006790248558849,
+          "variance_note": ""
+        },
+        "CASDS": {
+          "DSR_mean": 98.0,
+          "DSR_std": 2.8284271247461903,
+          "DSR_crit_mean": 97.72727272727272,
+          "DSR_crit_std": 3.214121732666126,
+          "ET_mean": 16.16525293474982,
+          "ET_std": 2.319796344937439,
+          "variance_note": ""
+        },
+        "_runs": [
+          {
+            "run_idx": 0,
+            "seed": 3290,
+            "schedulers": {
+              "ADS": {
+                "DSR": 80.0,
+                "DSR_crit": 100.0,
+                "ET": 12.750605818850861
+              },
+              "ASDYS": {
+                "DSR": 100.0,
+                "DSR_crit": 100.0,
+                "ET": 17.79450102338289
+              },
+              "HetSched": {
+                "DSR": 96.0,
+                "DSR_crit": 95.0,
+                "ET": 16.888885450750045
+              },
+              "TD_ADS": {
+                "DSR": 96.0,
+                "DSR_crit": 95.0,
+                "ET": 16.888885450750045
+              },
+              "CASDS": {
+                "DSR": 100.0,
+                "DSR_crit": 100.0,
+                "ET": 17.80559666122685
+              }
+            }
+          },
+          {
+            "run_idx": 1,
+            "seed": 3291,
+            "schedulers": {
+              "ADS": {
+                "DSR": 84.0,
+                "DSR_crit": 95.45454545454545,
+                "ET": 11.66774328620187
+              },
+              "ASDYS": {
+                "DSR": 96.0,
+                "DSR_crit": 95.45454545454545,
+                "ET": 14.52490920827279
+              },
+              "HetSched": {
+                "DSR": 80.0,
+                "DSR_crit": 90.9090909090909,
+                "ET": 12.034897049549478
+              },
+              "TD_ADS": {
+                "DSR": 84.0,
+                "DSR_crit": 90.9090909090909,
+                "ET": 12.636641902026952
+              },
+              "CASDS": {
+                "DSR": 96.0,
+                "DSR_crit": 95.45454545454545,
+                "ET": 14.52490920827279
+              }
+            }
+          }
+        ]
+      },
+      "lambda_30": {
+        "ADS": {
+          "DSR_mean": 76.0,
+          "DSR_std": 22.627416997969522,
+          "DSR_crit_mean": 82.6086956521739,
+          "DSR_crit_std": 24.595018476053827,
+          "ET_mean": 15.37531658435774,
+          "ET_std": 0.8950579115223185,
+          "variance_note": ""
+        },
+        "ASDYS": {
+          "DSR_mean": 80.0,
+          "DSR_std": 28.284271247461902,
+          "DSR_crit_mean": 80.43478260869566,
+          "DSR_crit_std": 27.66939578556055,
+          "ET_mean": 18.13115057233422,
+          "ET_std": 1.3552578463796647,
+          "variance_note": ""
+        },
+        "HetSched": {
+          "DSR_mean": 66.0,
+          "DSR_std": 31.11269837220809,
+          "DSR_crit_mean": 71.73913043478261,
+          "DSR_crit_std": 33.81815040457401,
+          "ET_mean": 14.50084311787922,
+          "ET_std": 2.940816462783025,
+          "variance_note": ""
+        },
+        "TD_ADS": {
+          "DSR_mean": 68.0,
+          "DSR_std": 28.284271247461902,
+          "DSR_crit_mean": 73.91304347826087,
+          "DSR_crit_std": 30.74377309506729,
+          "ET_mean": 15.14674790773767,
+          "ET_std": 2.027369148963463,
+          "variance_note": ""
+        },
+        "CASDS": {
+          "DSR_mean": 88.0,
+          "DSR_std": 16.97056274847714,
+          "DSR_crit_mean": 89.13043478260869,
+          "DSR_crit_std": 15.371886547533641,
+          "ET_mean": 20.62249205707026,
+          "ET_std": 2.3370662145980923,
+          "variance_note": ""
+        },
+        "_runs": [
+          {
+            "run_idx": 0,
+            "seed": 3390,
+            "schedulers": {
+              "ADS": {
+                "DSR": 60.0,
+                "DSR_crit": 65.21739130434783,
+                "ET": 14.74241506556564
+              },
+              "ASDYS": {
+                "DSR": 60.0,
+                "DSR_crit": 60.86956521739131,
+                "ET": 17.172838558902885
+              },
+              "HetSched": {
+                "DSR": 44.0,
+                "DSR_crit": 47.82608695652174,
+                "ET": 12.421371854820308
+              },
+              "TD_ADS": {
+                "DSR": 48.0,
+                "DSR_crit": 52.17391304347826,
+                "ET": 13.713181434537205
+              },
+              "CASDS": {
+                "DSR": 76.0,
+                "DSR_crit": 78.26086956521739,
+                "ET": 22.27504742549455
+              }
+            }
+          },
+          {
+            "run_idx": 1,
+            "seed": 3391,
+            "schedulers": {
+              "ADS": {
+                "DSR": 92.0,
+                "DSR_crit": 100.0,
+                "ET": 16.00821810314984
+              },
+              "ASDYS": {
+                "DSR": 100.0,
+                "DSR_crit": 100.0,
+                "ET": 19.08946258576556
+              },
+              "HetSched": {
+                "DSR": 88.0,
+                "DSR_crit": 95.65217391304348,
+                "ET": 16.580314380938134
+              },
+              "TD_ADS": {
+                "DSR": 88.0,
+                "DSR_crit": 95.65217391304348,
+                "ET": 16.580314380938134
+              },
+              "CASDS": {
+                "DSR": 100.0,
+                "DSR_crit": 100.0,
+                "ET": 18.969936688645976
+              }
+            }
+          }
+        ]
+      },
+      "lambda_40": {
+        "ADS": {
+          "DSR_mean": 54.0,
+          "DSR_std": 36.76955262170047,
+          "DSR_crit_mean": 56.8840579710145,
+          "DSR_crit_std": 37.40492393233187,
+          "ET_mean": 14.959905023565094,
+          "ET_std": 8.933112523667456,
+          "variance_note": ""
+        },
+        "ASDYS": {
+          "DSR_mean": 44.0,
+          "DSR_std": 22.62741699796952,
+          "DSR_crit_mean": 46.46739130434783,
+          "DSR_crit_std": 22.673532657612117,
+          "ET_mean": 13.201643995943261,
+          "ET_std": 6.934369484629409,
+          "variance_note": ""
+        },
+        "HetSched": {
+          "DSR_mean": 42.00000000000001,
+          "DSR_std": 19.798989873223334,
+          "DSR_crit_mean": 44.3840579710145,
+          "DSR_crit_std": 19.727254402668173,
+          "ET_mean": 12.744686515538238,
+          "ET_std": 5.092418785332223,
+          "variance_note": ""
+        },
+        "TD_ADS": {
+          "DSR_mean": 40.0,
+          "DSR_std": 16.970562748477136,
+          "DSR_crit_mean": 42.30072463768116,
+          "DSR_crit_std": 16.78097614772422,
+          "ET_mean": 12.254661066065928,
+          "ET_std": 4.542880358301728,
+          "variance_note": ""
+        },
+        "CASDS": {
+          "DSR_mean": 74.0,
+          "DSR_std": 25.455844122715707,
+          "DSR_crit_mean": 76.26811594202898,
+          "DSR_crit_std": 21.776839275672646,
+          "ET_mean": 23.678869294150118,
+          "ET_std": 6.969321610701279,
+          "variance_note": ""
+        },
+        "_runs": [
+          {
+            "run_idx": 0,
+            "seed": 3490,
+            "schedulers": {
+              "ADS": {
+                "DSR": 80.0,
+                "DSR_crit": 83.33333333333334,
+                "ET": 21.276569466152825
+              },
+              "ASDYS": {
+                "DSR": 60.0,
+                "DSR_crit": 62.5,
+                "ET": 18.10498368177778
+              },
+              "HetSched": {
+                "DSR": 56.00000000000001,
+                "DSR_crit": 58.333333333333336,
+                "ET": 16.345570371288414
+              },
+              "TD_ADS": {
+                "DSR": 52.0,
+                "DSR_crit": 54.166666666666664,
+                "ET": 15.466962573540252
+              },
+              "CASDS": {
+                "DSR": 92.0,
+                "DSR_crit": 91.66666666666666,
+                "ET": 28.606923865346946
+              }
+            }
+          },
+          {
+            "run_idx": 1,
+            "seed": 3491,
+            "schedulers": {
+              "ADS": {
+                "DSR": 28.000000000000004,
+                "DSR_crit": 30.434782608695656,
+                "ET": 8.643240580977363
+              },
+              "ASDYS": {
+                "DSR": 28.000000000000004,
+                "DSR_crit": 30.434782608695656,
+                "ET": 8.298304310108742
+              },
+              "HetSched": {
+                "DSR": 28.000000000000004,
+                "DSR_crit": 30.434782608695656,
+                "ET": 9.143802659788062
+              },
+              "TD_ADS": {
+                "DSR": 28.000000000000004,
+                "DSR_crit": 30.434782608695656,
+                "ET": 9.042359558591603
+              },
+              "CASDS": {
+                "DSR": 56.00000000000001,
+                "DSR_crit": 60.86956521739131,
+                "ET": 18.750814722953294
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

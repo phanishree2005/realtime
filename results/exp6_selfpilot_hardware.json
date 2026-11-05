@@ -1,0 +1,663 @@
+{
+  "metadata": {
+    "num_dags": 50,
+    "num_runs": 2,
+    "lambdas": [
+      5.0,
+      10.0,
+      20.0,
+      30.0,
+      40.0
+    ],
+    "critical_ratios": [
+      0.3,
+      0.6,
+      0.9
+    ],
+    "schedulers": [
+      "ADS",
+      "ASDYS",
+      "HetSched",
+      "TD_ADS",
+      "CASDS"
+    ]
+  },
+  "data": {
+    "rcrit_30": {
+      "lambda_5": {
+        "ADS": {
+          "DSR_mean": 87.0,
+          "DSR_std": 3.0,
+          "DSR_crit_mean": 100.0,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 3.8828470522599976,
+          "ET_std": 0.14352814657565327
+        },
+        "ASDYS": {
+          "DSR_mean": 100.0,
+          "DSR_std": 0.0,
+          "DSR_crit_mean": 100.0,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 4.50264868958185,
+          "ET_std": 0.3478499054881339
+        },
+        "HetSched": {
+          "DSR_mean": 99.0,
+          "DSR_std": 1.0,
+          "DSR_crit_mean": 100.0,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 4.457261805343282,
+          "ET_std": 0.38877071168275723
+        },
+        "TD_ADS": {
+          "DSR_mean": 99.0,
+          "DSR_std": 1.0,
+          "DSR_crit_mean": 100.0,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 4.457261805343282,
+          "ET_std": 0.38877071168275723
+        },
+        "CASDS": {
+          "DSR_mean": 100.0,
+          "DSR_std": 0.0,
+          "DSR_crit_mean": 100.0,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 4.50264868958185,
+          "ET_std": 0.3478499054881339
+        }
+      },
+      "lambda_10": {
+        "ADS": {
+          "DSR_mean": 79.0,
+          "DSR_std": 7.0,
+          "DSR_crit_mean": 100.0,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 6.206673509854843,
+          "ET_std": 0.2668756198603117
+        },
+        "ASDYS": {
+          "DSR_mean": 98.0,
+          "DSR_std": 0.0,
+          "DSR_crit_mean": 100.0,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 7.7899944827446275,
+          "ET_std": 0.41315942795294003
+        },
+        "HetSched": {
+          "DSR_mean": 94.0,
+          "DSR_std": 2.0,
+          "DSR_crit_mean": 100.0,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 7.4691423020483985,
+          "ET_std": 0.5538404932149721
+        },
+        "TD_ADS": {
+          "DSR_mean": 94.0,
+          "DSR_std": 2.0,
+          "DSR_crit_mean": 100.0,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 7.4691423020483985,
+          "ET_std": 0.5538404932149721
+        },
+        "CASDS": {
+          "DSR_mean": 98.0,
+          "DSR_std": 0.0,
+          "DSR_crit_mean": 100.0,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 7.7899944827446275,
+          "ET_std": 0.41315942795294003
+        }
+      },
+      "lambda_20": {
+        "ADS": {
+          "DSR_mean": 52.0,
+          "DSR_std": 8.0,
+          "DSR_crit_mean": 100.0,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 8.708362086044641,
+          "ET_std": 0.36737149247088396
+        },
+        "ASDYS": {
+          "DSR_mean": 97.0,
+          "DSR_std": 1.0,
+          "DSR_crit_mean": 100.0,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 16.51223285724282,
+          "ET_std": 1.686292074190833
+        },
+        "HetSched": {
+          "DSR_mean": 92.0,
+          "DSR_std": 0.0,
+          "DSR_crit_mean": 96.15384615384616,
+          "DSR_crit_std": 3.8461538461538467,
+          "ET_mean": 15.628000167793857,
+          "ET_std": 1.7496621768389353
+        },
+        "TD_ADS": {
+          "DSR_mean": 90.0,
+          "DSR_std": 2.0,
+          "DSR_crit_mean": 96.15384615384616,
+          "DSR_crit_std": 3.8461538461538467,
+          "ET_mean": 15.32629716799049,
+          "ET_std": 2.051365176642303
+        },
+        "CASDS": {
+          "DSR_mean": 99.0,
+          "DSR_std": 1.0,
+          "DSR_crit_mean": 100.0,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 16.891368793314356,
+          "ET_std": 2.0654280102623677
+        }
+      },
+      "lambda_30": {
+        "ADS": {
+          "DSR_mean": 34.0,
+          "DSR_std": 5.999999999999998,
+          "DSR_crit_mean": 85.91331269349845,
+          "DSR_crit_std": 3.5603715170278676,
+          "ET_mean": 7.576555168149081,
+          "ET_std": 1.4808276139654901
+        },
+        "ASDYS": {
+          "DSR_mean": 84.0,
+          "DSR_std": 2.0,
+          "DSR_crit_mean": 94.11764705882354,
+          "DSR_crit_std": 5.882352941176471,
+          "ET_mean": 22.25128457313091,
+          "ET_std": 0.46023516462341085
+        },
+        "HetSched": {
+          "DSR_mean": 81.0,
+          "DSR_std": 1.0,
+          "DSR_crit_mean": 94.11764705882354,
+          "DSR_crit_std": 5.882352941176471,
+          "ET_mean": 21.316196029035147,
+          "ET_std": 0.15784451219258067
+        },
+        "TD_ADS": {
+          "DSR_mean": 78.0,
+          "DSR_std": 0.0,
+          "DSR_crit_mean": 82.97213622291022,
+          "DSR_crit_std": 6.5015479876160995,
+          "ET_mean": 20.52795954870321,
+          "ET_std": 0.1014331802182955
+        },
+        "CASDS": {
+          "DSR_mean": 96.0,
+          "DSR_std": 2.0,
+          "DSR_crit_mean": 100.0,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 25.41742050125173,
+          "ET_std": 0.6255409869645518
+        }
+      },
+      "lambda_40": {
+        "ADS": {
+          "DSR_mean": 20.0,
+          "DSR_std": 0.0,
+          "DSR_crit_mean": 83.91608391608392,
+          "DSR_crit_std": 6.993006993006986,
+          "ET_mean": 4.814806632121863,
+          "ET_std": 0.09344237494760987
+        },
+        "ASDYS": {
+          "DSR_mean": 41.0,
+          "DSR_std": 1.0,
+          "DSR_crit_mean": 83.91608391608392,
+          "DSR_crit_std": 6.993006993006986,
+          "ET_mean": 14.59020295766895,
+          "ET_std": 0.19723424244225196
+        },
+        "HetSched": {
+          "DSR_mean": 52.0,
+          "DSR_std": 5.9999999999999964,
+          "DSR_crit_mean": 92.3076923076923,
+          "DSR_crit_std": 7.692307692307693,
+          "ET_mean": 18.259207402851175,
+          "ET_std": 2.2647442213771862
+        },
+        "TD_ADS": {
+          "DSR_mean": 48.0,
+          "DSR_std": 6.0,
+          "DSR_crit_mean": 62.58741258741259,
+          "DSR_crit_std": 1.0489510489510465,
+          "ET_mean": 16.862546626003223,
+          "ET_std": 2.269054811071456
+        },
+        "CASDS": {
+          "DSR_mean": 94.0,
+          "DSR_std": 0.0,
+          "DSR_crit_mean": 100.0,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 33.698707299140096,
+          "ET_std": 0.5884017140960474
+        }
+      }
+    },
+    "rcrit_60": {
+      "lambda_5": {
+        "ADS": {
+          "DSR_mean": 86.0,
+          "DSR_std": 6.0,
+          "DSR_crit_mean": 100.0,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 4.517459116962945,
+          "ET_std": 0.878881540696129
+        },
+        "ASDYS": {
+          "DSR_mean": 100.0,
+          "DSR_std": 0.0,
+          "DSR_crit_mean": 100.0,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 5.354040414197013,
+          "ET_std": 1.3913854078768289
+        },
+        "HetSched": {
+          "DSR_mean": 99.0,
+          "DSR_std": 1.0,
+          "DSR_crit_mean": 98.21428571428572,
+          "DSR_crit_std": 1.7857142857142847,
+          "ET_mean": 5.281404655486881,
+          "ET_std": 1.320651251250988
+        },
+        "TD_ADS": {
+          "DSR_mean": 99.0,
+          "DSR_std": 1.0,
+          "DSR_crit_mean": 98.21428571428572,
+          "DSR_crit_std": 1.7857142857142847,
+          "ET_mean": 5.281404655486881,
+          "ET_std": 1.320651251250988
+        },
+        "CASDS": {
+          "DSR_mean": 99.0,
+          "DSR_std": 1.0,
+          "DSR_crit_mean": 98.21428571428572,
+          "DSR_crit_std": 1.7857142857142847,
+          "ET_mean": 5.286586155976274,
+          "ET_std": 1.3239311496560902
+        }
+      },
+      "lambda_10": {
+        "ADS": {
+          "DSR_mean": 73.0,
+          "DSR_std": 1.0,
+          "DSR_crit_mean": 100.0,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 6.781045775663015,
+          "ET_std": 1.305461749252053
+        },
+        "ASDYS": {
+          "DSR_mean": 100.0,
+          "DSR_std": 0.0,
+          "DSR_crit_mean": 100.0,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 9.480943886089035,
+          "ET_std": 2.069441002430544
+        },
+        "HetSched": {
+          "DSR_mean": 96.0,
+          "DSR_std": 0.0,
+          "DSR_crit_mean": 100.0,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 9.084563049338788,
+          "ET_std": 1.9795254922318062
+        },
+        "TD_ADS": {
+          "DSR_mean": 96.0,
+          "DSR_std": 0.0,
+          "DSR_crit_mean": 100.0,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 9.084563049338788,
+          "ET_std": 1.9795254922318062
+        },
+        "CASDS": {
+          "DSR_mean": 100.0,
+          "DSR_std": 0.0,
+          "DSR_crit_mean": 100.0,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 9.480943886089035,
+          "ET_std": 2.069441002430544
+        }
+      },
+      "lambda_20": {
+        "ADS": {
+          "DSR_mean": 59.0,
+          "DSR_std": 13.0,
+          "DSR_crit_mean": 89.65517241379311,
+          "DSR_crit_std": 10.344827586206897,
+          "ET_mean": 11.892231725104894,
+          "ET_std": 2.4054855748370354
+        },
+        "ASDYS": {
+          "DSR_mean": 97.0,
+          "DSR_std": 3.0,
+          "DSR_crit_mean": 98.27586206896552,
+          "DSR_crit_std": 1.724137931034484,
+          "ET_mean": 21.062361091434504,
+          "ET_std": 0.8675575396068318
+        },
+        "HetSched": {
+          "DSR_mean": 95.0,
+          "DSR_std": 3.0,
+          "DSR_crit_mean": 96.88697318007662,
+          "DSR_crit_std": 0.33524904214559115,
+          "ET_mean": 20.517993064122482,
+          "ET_std": 0.8234060764655666
+        },
+        "TD_ADS": {
+          "DSR_mean": 95.0,
+          "DSR_std": 3.0,
+          "DSR_crit_mean": 96.88697318007662,
+          "DSR_crit_std": 0.33524904214559115,
+          "ET_mean": 20.517993064122482,
+          "ET_std": 0.8234060764655666
+        },
+        "CASDS": {
+          "DSR_mean": 97.0,
+          "DSR_std": 3.0,
+          "DSR_crit_mean": 98.27586206896552,
+          "DSR_crit_std": 1.724137931034484,
+          "ET_mean": 21.062120197472247,
+          "ET_std": 0.8729158118121934
+        }
+      },
+      "lambda_30": {
+        "ADS": {
+          "DSR_mean": 50.0,
+          "DSR_std": 7.9999999999999964,
+          "DSR_crit_mean": 88.75,
+          "DSR_crit_std": 1.25,
+          "ET_mean": 10.733639774138654,
+          "ET_std": 1.7902076613969289
+        },
+        "ASDYS": {
+          "DSR_mean": 89.0,
+          "DSR_std": 5.0,
+          "DSR_crit_mean": 89.16666666666666,
+          "DSR_crit_std": 2.499999999999993,
+          "ET_mean": 21.101144139209207,
+          "ET_std": 1.3215374516698901
+        },
+        "HetSched": {
+          "DSR_mean": 80.0,
+          "DSR_std": 0.0,
+          "DSR_crit_mean": 89.58333333333334,
+          "DSR_crit_std": 6.25,
+          "ET_mean": 18.657673255772234,
+          "ET_std": 0.02606531552996927
+        },
+        "TD_ADS": {
+          "DSR_mean": 77.0,
+          "DSR_std": 1.0,
+          "DSR_crit_mean": 87.5,
+          "DSR_crit_std": 4.166666666666657,
+          "ET_mean": 17.978047205899248,
+          "ET_std": 0.23009299783449322
+        },
+        "CASDS": {
+          "DSR_mean": 96.0,
+          "DSR_std": 2.0,
+          "DSR_crit_mean": 98.33333333333334,
+          "DSR_crit_std": 1.6666666666666643,
+          "ET_mean": 22.752974624284697,
+          "ET_std": 0.623863630036066
+        }
+      },
+      "lambda_40": {
+        "ADS": {
+          "DSR_mean": 59.0,
+          "DSR_std": 1.0000000000000036,
+          "DSR_crit_mean": 96.72043010752688,
+          "DSR_crit_std": 0.053763440860215894,
+          "ET_mean": 15.171336772994405,
+          "ET_std": 0.3515340480811968
+        },
+        "ASDYS": {
+          "DSR_mean": 56.0,
+          "DSR_std": 4.0,
+          "DSR_crit_mean": 88.70967741935485,
+          "DSR_crit_std": 11.29032258064516,
+          "ET_mean": 17.09869326432428,
+          "ET_std": 1.377499631278746
+        },
+        "HetSched": {
+          "DSR_mean": 63.0,
+          "DSR_std": 1.0,
+          "DSR_crit_mean": 90.21505376344086,
+          "DSR_crit_std": 3.118279569892472,
+          "ET_mean": 21.559135878424897,
+          "ET_std": 1.4342954660605098
+        },
+        "TD_ADS": {
+          "DSR_mean": 47.0,
+          "DSR_std": 5.0,
+          "DSR_crit_mean": 60.59139784946237,
+          "DSR_crit_std": 3.9247311827957,
+          "ET_mean": 16.04691784959489,
+          "ET_std": 0.4707224226854203
+        },
+        "CASDS": {
+          "DSR_mean": 86.0,
+          "DSR_std": 2.0,
+          "DSR_crit_mean": 96.7741935483871,
+          "DSR_crit_std": 3.225806451612904,
+          "ET_mean": 30.256505899671467,
+          "ET_std": 2.6847484563873607
+        }
+      }
+    },
+    "rcrit_90": {
+      "lambda_5": {
+        "ADS": {
+          "DSR_mean": 96.0,
+          "DSR_std": 2.0,
+          "DSR_crit_mean": 100.0,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 4.319978811933346,
+          "ET_std": 0.25454830868236167
+        },
+        "ASDYS": {
+          "DSR_mean": 100.0,
+          "DSR_std": 0.0,
+          "DSR_crit_mean": 100.0,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 4.507458343063027,
+          "ET_std": 0.3590598703579402
+        },
+        "HetSched": {
+          "DSR_mean": 100.0,
+          "DSR_std": 0.0,
+          "DSR_crit_mean": 100.0,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 4.503576949164014,
+          "ET_std": 0.35844565116462546
+        },
+        "TD_ADS": {
+          "DSR_mean": 100.0,
+          "DSR_std": 0.0,
+          "DSR_crit_mean": 100.0,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 4.503576949164014,
+          "ET_std": 0.35844565116462546
+        },
+        "CASDS": {
+          "DSR_mean": 100.0,
+          "DSR_std": 0.0,
+          "DSR_crit_mean": 100.0,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 4.507458343063027,
+          "ET_std": 0.3590598703579402
+        }
+      },
+      "lambda_10": {
+        "ADS": {
+          "DSR_mean": 86.0,
+          "DSR_std": 4.0,
+          "DSR_crit_mean": 97.67441860465117,
+          "DSR_crit_std": 2.3255813953488342,
+          "ET_mean": 8.086278974617189,
+          "ET_std": 0.53493275196421
+        },
+        "ASDYS": {
+          "DSR_mean": 98.0,
+          "DSR_std": 2.0,
+          "DSR_crit_mean": 97.67441860465117,
+          "DSR_crit_std": 2.3255813953488342,
+          "ET_mean": 9.30427198691472,
+          "ET_std": 0.7888539368878931
+        },
+        "HetSched": {
+          "DSR_mean": 95.0,
+          "DSR_std": 1.0,
+          "DSR_crit_mean": 95.45219638242895,
+          "DSR_crit_std": 0.1033591731266128,
+          "ET_mean": 9.00648375533903,
+          "ET_std": 0.8566661048703592
+        },
+        "TD_ADS": {
+          "DSR_mean": 95.0,
+          "DSR_std": 1.0,
+          "DSR_crit_mean": 95.45219638242895,
+          "DSR_crit_std": 0.1033591731266128,
+          "ET_mean": 9.00648375533903,
+          "ET_std": 0.8566661048703592
+        },
+        "CASDS": {
+          "DSR_mean": 99.0,
+          "DSR_std": 1.0,
+          "DSR_crit_mean": 98.83720930232558,
+          "DSR_crit_std": 1.1627906976744242,
+          "ET_mean": 9.409408715287665,
+          "ET_std": 0.8939906652608371
+        }
+      },
+      "lambda_20": {
+        "ADS": {
+          "DSR_mean": 82.0,
+          "DSR_std": 2.0,
+          "DSR_crit_mean": 95.34883720930232,
+          "DSR_crit_std": 2.3255813953488342,
+          "ET_mean": 14.017030652332277,
+          "ET_std": 0.9440693846790493
+        },
+        "ASDYS": {
+          "DSR_mean": 97.0,
+          "DSR_std": 3.0,
+          "DSR_crit_mean": 96.51162790697674,
+          "DSR_crit_std": 3.4883720930232585,
+          "ET_mean": 17.42286105682645,
+          "ET_std": 1.6046055014730962
+        },
+        "HetSched": {
+          "DSR_mean": 88.0,
+          "DSR_std": 10.0,
+          "DSR_crit_mean": 91.86046511627907,
+          "DSR_crit_std": 5.813953488372086,
+          "ET_mean": 15.797287777232864,
+          "ET_std": 2.7133346671038643
+        },
+        "TD_ADS": {
+          "DSR_mean": 89.0,
+          "DSR_std": 9.0,
+          "DSR_crit_mean": 93.02325581395348,
+          "DSR_crit_std": 4.6511627906976685,
+          "ET_mean": 15.965030765824263,
+          "ET_std": 2.5455916785124666
+        },
+        "CASDS": {
+          "DSR_mean": 97.0,
+          "DSR_std": 3.0,
+          "DSR_crit_mean": 97.67441860465117,
+          "DSR_crit_std": 2.3255813953488342,
+          "ET_mean": 17.42286105682645,
+          "ET_std": 1.6046055014730962
+        }
+      },
+      "lambda_30": {
+        "ADS": {
+          "DSR_mean": 66.0,
+          "DSR_std": 8.000000000000004,
+          "DSR_crit_mean": 70.88344125809436,
+          "DSR_crit_std": 7.8399629972247915,
+          "ET_mean": 17.18547640356781,
+          "ET_std": 0.4805334867075004
+        },
+        "ASDYS": {
+          "DSR_mean": 64.0,
+          "DSR_std": 14.0,
+          "DSR_crit_mean": 65.44865864939871,
+          "DSR_crit_std": 13.274745605920447,
+          "ET_mean": 17.964898645517724,
+          "ET_std": 0.9404040030276732
+        },
+        "HetSched": {
+          "DSR_mean": 56.0,
+          "DSR_std": 18.0,
+          "DSR_crit_mean": 60.01387604070305,
+          "DSR_crit_std": 18.7095282146161,
+          "ET_mean": 15.370576343703638,
+          "ET_std": 2.4635854739813237
+        },
+        "TD_ADS": {
+          "DSR_mean": 56.0,
+          "DSR_std": 18.0,
+          "DSR_crit_mean": 60.01387604070305,
+          "DSR_crit_std": 18.7095282146161,
+          "ET_mean": 15.453197136762785,
+          "ET_std": 2.365991489343646
+        },
+        "CASDS": {
+          "DSR_mean": 87.0,
+          "DSR_std": 5.0,
+          "DSR_crit_mean": 87.04902867715077,
+          "DSR_crit_std": 4.440333024976873,
+          "ET_mean": 25.429340529332364,
+          "ET_std": 3.1227408681701565
+        }
+      },
+      "lambda_40": {
+        "ADS": {
+          "DSR_mean": 45.0,
+          "DSR_std": 9.0,
+          "DSR_crit_mean": 47.87234042553192,
+          "DSR_crit_std": 9.574468085106385,
+          "ET_mean": 14.923498985678716,
+          "ET_std": 2.193707590244074
+        },
+        "ASDYS": {
+          "DSR_mean": 36.0,
+          "DSR_std": 0.0,
+          "DSR_crit_mean": 38.297872340425535,
+          "DSR_crit_std": 0.0,
+          "ET_mean": 12.579871391529661,
+          "ET_std": 0.4726515869198442
+        },
+        "HetSched": {
+          "DSR_mean": 31.0,
+          "DSR_std": 5.0,
+          "DSR_crit_mean": 32.97872340425532,
+          "DSR_crit_std": 5.319148936170214,
+          "ET_mean": 11.185722061526398,
+          "ET_std": 1.4591569827042417
+        },
+        "TD_ADS": {
+          "DSR_mean": 25.0,
+          "DSR_std": 10.999999999999998,
+          "DSR_crit_mean": 26.595744680851066,
+          "DSR_crit_std": 11.70212765957447,
+          "ET_mean": 8.969890278016324,
+          "ET_std": 3.618757441963089
+        },
+        "CASDS": {
+          "DSR_mean": 76.0,
+          "DSR_std": 8.0,
+          "DSR_crit_mean": 77.65957446808511,
+          "DSR_crit_std": 5.319148936170208,
+          "ET_mean": 28.611136425832527,
+          "ET_std": 1.6512781070105245
+        }
+      }
+    }
+  }
+}

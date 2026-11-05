@@ -1,0 +1,58 @@
+{
+  "table_ii": {
+    "T_rem in (8)": {
+      "Avg_DSR": 27.31,
+      "Avg_DSR_crit": 45.82,
+      "Challenging_DSR": 6.67,
+      "Challenging_DSR_crit": 6.68
+    },
+    "T-Ddl in [19], [21]": {
+      "Avg_DSR": 41.76,
+      "Avg_DSR_crit": 61.5,
+      "Challenging_DSR": 16.67,
+      "Challenging_DSR_crit": 18.14
+    },
+    "Urgency in [20]": {
+      "Avg_DSR": 27.5,
+      "Avg_DSR_crit": 46.16,
+      "Challenging_DSR": 6.67,
+      "Challenging_DSR_crit": 6.68
+    },
+    "CAS in (10)": {
+      "Avg_DSR": 48.8,
+      "Avg_DSR_crit": 68.33,
+      "Challenging_DSR": 28.33,
+      "Challenging_DSR_crit": 30.96
+    },
+    "w/o C_i^a": {
+      "Avg_DSR": 12.69,
+      "Avg_DSR_crit": 12.29,
+      "Challenging_DSR": 4.17,
+      "Challenging_DSR_crit": 3.79
+    },
+    "Multi-Key Sorting": {
+      "Avg_DSR": 23.06,
+      "Avg_DSR_crit": 42.37,
+      "Challenging_DSR": 4.17,
+      "Challenging_DSR_crit": 3.79
+    },
+    "Adaptive Priority": {
+      "Avg_DSR": 48.8,
+      "Avg_DSR_crit": 68.33,
+      "Challenging_DSR": 28.33,
+      "Challenging_DSR_crit": 30.96
+    },
+    "with AEFT": {
+      "Avg_DSR": 48.8,
+      "Avg_DSR_crit": 68.33,
+      "Challenging_DSR": 28.33,
+      "Challenging_DSR_crit": 30.96
+    },
+    "with HEFT": {
+      "Avg_DSR": 48.8,
+      "Avg_DSR_crit": 68.33,
+      "Challenging_DSR": 28.33,
+      "Challenging_DSR_crit": 30.96
+    }
+  }
+}

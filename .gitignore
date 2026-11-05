@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# Virtual Environment
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Temporary and Cache
+.pytest_cache/
+*.swp
+*.swo
+.*DS_Store
+*.out
+*.tmp
+*.log
+dmd_project/data/temp_upload.*
+
+# Simulation artifacts
+sim_*
+
+# Keep essential dataset CSVs but ignore generated runtime CSVs
+*.csv
+!dmd_project/data/**/unified_dataset.csv
+!dmd_project/data/**/metadata_*.csv
+!inputs/*.csv

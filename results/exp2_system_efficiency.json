@@ -1,0 +1,325 @@
+{
+  "metadata": {
+    "num_dags": 100,
+    "num_runs": 2,
+    "lambdas": [
+      20.0,
+      25.0,
+      30.0,
+      35.0,
+      40.0
+    ],
+    "critical_ratio": 0.6,
+    "schedulers": [
+      "ADS",
+      "ASDYS",
+      "HetSched",
+      "TD_ADS",
+      "ULS",
+      "CASDS"
+    ],
+    "elapsed_seconds": 66.78
+  },
+  "by_lambda": {
+    "lambda_20": {
+      "ADS": {
+        "Makespan_mean": 7.515718510128359,
+        "Makespan_std": 0.18530311763857465,
+        "Utilization_mean": 23.373808965873195,
+        "Utilization_std": 0.11315890031663756,
+        "ET_mean": 2.682403231386101,
+        "ET_std": 0.8644626156213865
+      },
+      "ASDYS": {
+        "Makespan_mean": 7.472511742250614,
+        "Makespan_std": 0.13919634976082929,
+        "Utilization_mean": 23.529233197384926,
+        "Utilization_std": 0.004350469436026572,
+        "ET_mean": 3.700135041915119,
+        "ET_std": 1.0726039072161697
+      },
+      "HetSched": {
+        "Makespan_mean": 7.479961742250613,
+        "Makespan_std": 0.16274634976082947,
+        "Utilization_mean": 23.58388016851284,
+        "Utilization_std": 0.040070909783898045,
+        "ET_mean": 5.854669223986353,
+        "ET_std": 1.7985153546003412
+      },
+      "TD_ADS": {
+        "Makespan_mean": 7.494961742250613,
+        "Makespan_std": 0.1627463497608299,
+        "Utilization_mean": 23.536656693751237,
+        "Utilization_std": 0.03896529883187583,
+        "ET_mean": 1.6047293437364294,
+        "ET_std": 0.16826821622554256
+      },
+      "ULS": {
+        "Makespan_mean": 7.499411742250613,
+        "Makespan_std": 0.16719634976082975,
+        "Utilization_mean": 23.49291714772879,
+        "Utilization_std": 0.08270484485432483,
+        "ET_mean": 1.6038955653639464,
+        "ET_std": 0.16910199459802577
+      },
+      "CASDS": {
+        "Makespan_mean": 7.466411742250614,
+        "Makespan_std": 0.14919634976082952,
+        "Utilization_mean": 23.625770272573007,
+        "Utilization_std": 0.0018191942762655344,
+        "ET_mean": 7.860976295813597,
+        "ET_std": 1.2955123964240545
+      }
+    },
+    "lambda_25": {
+      "ADS": {
+        "Makespan_mean": 7.2941,
+        "Makespan_std": 0.04800000000000004,
+        "Utilization_mean": 23.58986543389273,
+        "Utilization_std": 0.03026762442088682,
+        "ET_mean": 2.81467241336425,
+        "ET_std": 0.6354593816703202
+      },
+      "ASDYS": {
+        "Makespan_mean": 7.34515,
+        "Makespan_std": 0.003049999999999997,
+        "Utilization_mean": 23.433634027491813,
+        "Utilization_std": 0.15739473916791802,
+        "ET_mean": 5.104930045731041,
+        "ET_std": 1.1551064257857935
+      },
+      "HetSched": {
+        "Makespan_mean": 7.2971,
+        "Makespan_std": 0.051000000000000156,
+        "Utilization_mean": 23.627686282351814,
+        "Utilization_std": 0.04021783158535186,
+        "ET_mean": 5.55185793500341,
+        "ET_std": 0.2443634806546675
+      },
+      "TD_ADS": {
+        "Makespan_mean": 7.2971,
+        "Makespan_std": 0.051000000000000156,
+        "Utilization_mean": 23.627686282351814,
+        "Utilization_std": 0.04021783158535186,
+        "ET_mean": 1.1625086230687147,
+        "ET_std": 0.3344769922604178
+      },
+      "ULS": {
+        "Makespan_mean": 7.2971,
+        "Makespan_std": 0.051000000000000156,
+        "Utilization_mean": 23.627686282351814,
+        "Utilization_std": 0.04021783158535186,
+        "ET_mean": 1.2315112589694062,
+        "ET_std": 0.26547435635972644
+      },
+      "CASDS": {
+        "Makespan_mean": 7.2971,
+        "Makespan_std": 0.04600000000000026,
+        "Utilization_mean": 23.62755666146844,
+        "Utilization_std": 0.024027236147110997,
+        "ET_mean": 7.671994777225375,
+        "ET_std": 0.362758937145939
+      }
+    },
+    "lambda_30": {
+      "ADS": {
+        "Makespan_mean": 7.465600000000001,
+        "Makespan_std": 0.21450000000000014,
+        "Utilization_mean": 23.573343679030927,
+        "Utilization_std": 0.05702327855535927,
+        "ET_mean": 2.1487857211245274,
+        "ET_std": 0.19568615210849905
+      },
+      "ASDYS": {
+        "Makespan_mean": 7.4745047162519604,
+        "Makespan_std": 0.2055952837480408,
+        "Utilization_mean": 23.544395497100627,
+        "Utilization_std": 0.028075096625062912,
+        "ET_mean": 2.421058083517466,
+        "ET_std": 0.4679585145014381
+      },
+      "HetSched": {
+        "Makespan_mean": 7.473600000000001,
+        "Makespan_std": 0.22250000000000014,
+        "Utilization_mean": 23.55639506148288,
+        "Utilization_std": 0.07397189610340149,
+        "ET_mean": 2.0168195568917175,
+        "ET_std": 0.327652316341309
+      },
+      "TD_ADS": {
+        "Makespan_mean": 7.473600000000001,
+        "Makespan_std": 0.22250000000000014,
+        "Utilization_mean": 23.55639506148288,
+        "Utilization_std": 0.07397189610340149,
+        "ET_mean": 0.8035381553129359,
+        "ET_std": 0.0239225058281321
+      },
+      "ULS": {
+        "Makespan_mean": 7.473600000000001,
+        "Makespan_std": 0.22250000000000014,
+        "Utilization_mean": 23.55639506148288,
+        "Utilization_std": 0.07397189610340149,
+        "ET_mean": 0.8035381553129359,
+        "ET_std": 0.0239225058281321
+      },
+      "CASDS": {
+        "Makespan_mean": 7.4666000000000015,
+        "Makespan_std": 0.21450000000000014,
+        "Utilization_mean": 23.577694622715583,
+        "Utilization_std": 0.049413917728410084,
+        "ET_mean": 5.346212785263743,
+        "ET_std": 0.3821334151502591
+      }
+    },
+    "lambda_35": {
+      "ADS": {
+        "Makespan_mean": 7.236182783297277,
+        "Makespan_std": 0.08608278329727703,
+        "Utilization_mean": 23.713581973895895,
+        "Utilization_std": 0.1300866999150294,
+        "ET_mean": 2.9008491212713015,
+        "ET_std": 0.1036854452387983
+      },
+      "ASDYS": {
+        "Makespan_mean": 7.236732783297278,
+        "Makespan_std": 0.08653278329727643,
+        "Utilization_mean": 23.727751640307098,
+        "Utilization_std": 0.13172082200166457,
+        "ET_mean": 2.7624207589416345,
+        "ET_std": 0.10515243078298231
+      },
+      "HetSched": {
+        "Makespan_mean": 7.236682783297277,
+        "Makespan_std": 0.08658278329727676,
+        "Utilization_mean": 23.735987228804518,
+        "Utilization_std": 0.13995641049908514,
+        "ET_mean": 1.723424201052632,
+        "ET_std": 0.32484236303638037
+      },
+      "TD_ADS": {
+        "Makespan_mean": 7.238782783297278,
+        "Makespan_std": 0.08348278329727643,
+        "Utilization_mean": 23.728922750492693,
+        "Utilization_std": 0.1296694280860784,
+        "ET_mean": 1.3101598180282348,
+        "ET_std": 0.1921074652268151
+      },
+      "ULS": {
+        "Makespan_mean": 7.238782783297278,
+        "Makespan_std": 0.08348278329727643,
+        "Utilization_mean": 23.728922750492693,
+        "Utilization_std": 0.1296694280860784,
+        "ET_mean": 1.3784446945398279,
+        "ET_std": 0.2603923417384083
+      },
+      "CASDS": {
+        "Makespan_mean": 7.237182783297277,
+        "Makespan_std": 0.08608278329727659,
+        "Utilization_mean": 23.73431783922534,
+        "Utilization_std": 0.13828702091990586,
+        "ET_mean": 5.529438370935103,
+        "ET_std": 0.2039453043036712
+      }
+    },
+    "lambda_40": {
+      "ADS": {
+        "Makespan_mean": 7.2761,
+        "Makespan_std": 0.07100000000000017,
+        "Utilization_mean": 23.72338358058368,
+        "Utilization_std": 0.07773941614031621,
+        "ET_mean": 2.055034137416914,
+        "ET_std": 0.6671283484618682
+      },
+      "ASDYS": {
+        "Makespan_mean": 7.27215,
+        "Makespan_std": 0.07095000000000029,
+        "Utilization_mean": 23.728257638528547,
+        "Utilization_std": 0.08583052168047978,
+        "ET_mean": 2.054809647316955,
+        "ET_std": 0.805017945933852
+      },
+      "HetSched": {
+        "Makespan_mean": 7.2741,
+        "Makespan_std": 0.07400000000000073,
+        "Utilization_mean": 23.74583824937791,
+        "Utilization_std": 0.06774830831938239,
+        "ET_mean": 0.8249296838906766,
+        "ET_std": 0.008392075529331577
+      },
+      "TD_ADS": {
+        "Makespan_mean": 7.2766,
+        "Makespan_std": 0.07150000000000034,
+        "Utilization_mean": 23.737622509852763,
+        "Utilization_std": 0.07596404784453448,
+        "ET_mean": 0.7565957401704075,
+        "ET_std": 0.07614773320261997
+      },
+      "ULS": {
+        "Makespan_mean": 7.2761,
+        "Makespan_std": 0.07100000000000017,
+        "Utilization_mean": 23.7392431211523,
+        "Utilization_std": 0.07758465914407431,
+        "ET_mean": 0.6872467579736092,
+        "ET_std": 0.006706136503913662
+      },
+      "CASDS": {
+        "Makespan_mean": 7.2741,
+        "Makespan_std": 0.0730000000000004,
+        "Utilization_mean": 23.745814800051917,
+        "Utilization_std": 0.07101298024445768,
+        "ET_mean": 4.466287044410221,
+        "ET_std": 0.1613891815837083
+      }
+    }
+  },
+  "overall_summary": {
+    "ADS": {
+      "Makespan_mean": 7.357540258685127,
+      "Makespan_std": 0.17730472464021146,
+      "Utilization_mean": 23.594796726655282,
+      "Utilization_std": 0.15485692861745484,
+      "ET_mean": 2.5203489249126187,
+      "ET_std": 0.6719305907553297
+    },
+    "ASDYS": {
+      "Makespan_mean": 7.36020984835997,
+      "Makespan_std": 0.15689431206485818,
+      "Utilization_mean": 23.5926544001626,
+      "Utilization_std": 0.15399717342480967,
+      "ET_mean": 3.2086707154844434,
+      "ET_std": 1.3675562710922575
+    },
+    "HetSched": {
+      "Makespan_mean": 7.352288905109579,
+      "Makespan_std": 0.17035670420681506,
+      "Utilization_mean": 23.649957398105993,
+      "Utilization_std": 0.11232364527031631,
+      "ET_mean": 3.194340120164958,
+      "ET_std": 2.2497473343041934
+    },
+    "TD_ADS": {
+      "Makespan_mean": 7.356208905109578,
+      "Makespan_std": 0.17165582015281017,
+      "Utilization_mean": 23.63745665958628,
+      "Utilization_std": 0.11525504454447863,
+      "ET_mean": 1.1275063360633444,
+      "ET_std": 0.37103218151599765
+    },
+    "ULS": {
+      "Makespan_mean": 7.356998905109579,
+      "Makespan_std": 0.17323800918401575,
+      "Utilization_mean": 23.629032872641694,
+      "Utilization_std": 0.1286023240267346,
+      "ET_mean": 1.140927286431945,
+      "ET_std": 0.39143597148991
+    },
+    "CASDS": {
+      "Makespan_mean": 7.348278905109578,
+      "Makespan_std": 0.16220014404582095,
+      "Utilization_mean": 23.662230839206856,
+      "Utilization_std": 0.09904479171569391,
+      "ET_mean": 6.174981854729608,
+      "ET_std": 1.4920093818801894
+    }
+  }
+}
