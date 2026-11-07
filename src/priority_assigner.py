@@ -26,8 +26,21 @@ class PriorityAssigner:
     STRATEGY_ARITHMETIC = "Arithmetic"
     STRATEGY_GEOMETRIC = "Geometric"
     STRATEGY_LOGARITHMIC = "Logarithmic"
+    STRATEGY_DMS = "Deadline Monotonic (DMS)"
+    STRATEGY_RMS = "Rate Monotonic (RMS)"
+    STRATEGY_TOPSIS = "Adaptive TOPSIS"
 
     ALL_STRATEGIES = [
+        STRATEGY_UNIFORM,
+        STRATEGY_ARITHMETIC,
+        STRATEGY_GEOMETRIC,
+        STRATEGY_LOGARITHMIC
+    ]
+
+    EXTENDED_STRATEGIES = [
+        STRATEGY_DMS,
+        STRATEGY_RMS,
+        STRATEGY_TOPSIS,
         STRATEGY_UNIFORM,
         STRATEGY_ARITHMETIC,
         STRATEGY_GEOMETRIC,
@@ -150,7 +163,7 @@ class PriorityAssigner:
             score = (topsis_scores or {}).get(task.task_id, 0.0)
             # Higher TOPSIS score means higher priority, so return negative score
             return (-score, task.period, task.task_id)
-        elif self.base_sorting == "DM":
+        elif self.base_sorting in ["DM", "DMS", "DEADLINE_MONOTONIC", "DEADLINE MONOTONIC", "DEADLINE MONOTONIC (DMS)"]:
             return (task.deadline, task.period, task.task_id)
         elif self.base_sorting == "CRITICALITY":
             crit_map = {"ASIL-D": 1, "ASIL-C": 2, "ASIL-B": 3, "ASIL-A": 4, "QM": 5}
@@ -183,8 +196,18 @@ class PriorityAssigner:
 
         priorities_raw: List[float] = []
 
-        if strategy == self.STRATEGY_UNIFORM:
-            # Uniform: linear progression P_i = P_min + i * (P_max - P_min) / (N - 1)
+        if strategy in [
+            self.STRATEGY_UNIFORM,
+            self.STRATEGY_DMS,
+            "DMS",
+            "DM",
+            self.STRATEGY_RMS,
+            "RMS",
+            "RM",
+            self.STRATEGY_TOPSIS,
+            "TOPSIS"
+        ]:
+            # Uniform / Direct progression: P_i = P_min + i * (P_max - P_min) / (N - 1)
             for i in range(n_tasks):
                 norm_i = i / (n_tasks - 1)
                 p = self.p_min + norm_i * (self.p_max - self.p_min)
@@ -261,24 +284,40 @@ class PriorityAssigner:
         if n == 0:
             return cloned_set
 
-        # Sort tasks based on baseline policy (RM/DM/Criticality/TOPSIS)
-        topsis_scores = self.compute_topsis_scores(cloned_set.tasks) if self.base_sorting in ["TOPSIS", "ADAPTIVE", "ADAPTIVE_TOPSIS"] else None
-        sorted_tasks = sorted(cloned_set.tasks, key=lambda t: self._get_sort_key(t, topsis_scores))
+        # Determine effective sorting policy
+        prev_sorting = self.base_sorting
+        strat_upper = strategy.upper()
+        if strat_upper in ["DEADLINE MONOTONIC (DMS)", "DMS", "DM", "DEADLINE_MONOTONIC", "DEADLINE MONOTONIC"]:
+            self.base_sorting = "DMS"
+        elif strat_upper in ["RATE MONOTONIC (RMS)", "RMS", "RM", "RATE_MONOTONIC", "RATE MONOTONIC"]:
+            self.base_sorting = "RM"
+        elif strat_upper in ["ADAPTIVE TOPSIS", "TOPSIS", "ADAPTIVE", "ADAPTIVE_TOPSIS"]:
+            self.base_sorting = "TOPSIS"
 
-        # Generate priority spectrum for N tasks
-        priority_levels = self.compute_priority_values(strategy, n, enforce_unique=enforce_unique)
+        try:
+            # Sort tasks based on baseline policy (RM/DMS/Criticality/TOPSIS)
+            topsis_scores = self.compute_topsis_scores(cloned_set.tasks) if self.base_sorting in ["TOPSIS", "ADAPTIVE", "ADAPTIVE_TOPSIS"] else None
+            sorted_tasks = sorted(cloned_set.tasks, key=lambda t: self._get_sort_key(t, topsis_scores))
 
-        # Map highest priority levels to top-ranked tasks (lowest periods)
-        # reversed so rank 0 gets highest priority level (e.g. priority_levels[-1])
-        for idx, task in enumerate(sorted_tasks):
-            assigned_p = priority_levels[n - 1 - idx]
-            task.priority = assigned_p
+            # Generate priority spectrum for N tasks
+            priority_levels = self.compute_priority_values(strategy, n, enforce_unique=enforce_unique)
 
-        return cloned_set
+            # Map highest priority levels to top-ranked tasks (lowest periods/deadlines)
+            # reversed so rank 0 gets highest priority level (e.g. priority_levels[-1])
+            for idx, task in enumerate(sorted_tasks):
+                assigned_p = priority_levels[n - 1 - idx]
+                task.priority = assigned_p
+
+            return cloned_set
+        finally:
+            self.base_sorting = prev_sorting
 
     def get_strategy_formulas_doc(self) -> Dict[str, str]:
         """Returns documented mathematical formulas for all strategies."""
         return {
+            self.STRATEGY_DMS: "Priority strictly inversely proportional to relative deadline: D_i <= D_j => P_i >= P_j",
+            self.STRATEGY_RMS: "Priority strictly inversely proportional to task period: T_i <= T_j => P_i >= P_j",
+            self.STRATEGY_TOPSIS: "Priority based on EWM-TOPSIS relative closeness score balancing ASIL Criticality and Negative Slack Urgency",
             self.STRATEGY_UNIFORM: "P_i = round(P_min + i * (P_max - P_min) / (N - 1))",
             self.STRATEGY_ARITHMETIC: f"P_i = round(P_min + (P_max - P_min) * (sum_{{k=0}}^i ({self.arithmetic_a0} + k*{self.arithmetic_d})) / TotalSum)",
             self.STRATEGY_GEOMETRIC: f"P_i = round(P_min + (P_max - P_min) * (({self.geometric_ratio}^i - 1) / ({self.geometric_ratio}^(N-1) - 1)))",

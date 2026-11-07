@@ -25,6 +25,8 @@ Driver distraction and drowsiness account for over 20% of fatal roadway crashes 
    * Tracks micro-blinks and eye closure intervals (PERCLOS metric) to alert drowsy drivers.
 4. **Automotive Cockpit Head-Up Display (HUD)**:
    * Real-time in-video HUD overlay featuring a 2D Cockpit Gaze Map, confidence meter, and latency tracker.
+5. **Real-Time Embedded Priority Scheduling (DMS & FPPS)**:
+   * Implements ISO 26262 ASIL-D task scheduling under **Deadline Monotonic Scheduling (DMS)**, Rate Monotonic (RMS), and Adaptive TOPSIS priority distribution curves with exact Response Time Analysis (RTA) and interactive CPU Gantt timelines.
 
 ---
 
@@ -34,13 +36,13 @@ Driver distraction and drowsiness account for over 20% of fatal roadway crashes 
 Open your browser and navigate to:
 👉 **`http://localhost:8502`**
 
-*(To restart manually from terminal: `streamlit run dmd_project/app_dmd.py --server.port 8502`)*
+*(To restart manually from terminal: `streamlit run dmd_project/app_dmd.py --server.port 8502` or `streamlit run dmd_project/app_unified.py --server.port 8502`)*
 
 **Features in the Web App:**
-* **Cockpit Live Stream Tab**: Scrub through the official 720p DMD face video or upload custom videos/images to view real-time HUD predictions and gaze probability bars.
+* **Cockpit Live Stream Tab**: Scrub through official 720p DMD face videos or upload custom videos to view real-time HUD predictions and gaze probability bars.
+* **DMS Priority Scheduler Tab**: Interactive RTOS priority quantization grid ($P_{\min}, P_{\max}$), exact WCRT analysis, CPU Gantt timeline, preemption tracking, and priority curve comparisons for all 8 in-cabin tasks.
 * **Driver Analytics Tab**: Review gaze distribution pie charts, safe vs distracted ratio, and blink frequency.
 * **Training Performance Tab**: Inspect multi-task training loss curves and validation accuracies.
-* **Viva Defense Guide Tab**: Comprehensive answers to questions on NHTSA/Euro NCAP guidelines, latency, and model architecture.
 
 ---
 

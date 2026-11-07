@@ -126,29 +126,5 @@ def run_robustness_experiment(
 
 
 if __name__ == '__main__':
-    print("=" * 60)
-    print("  CASDS Benchmark Suite — Reproducing Paper Results")
-    print("=" * 60)
-
-    # Experiment 1: Arrival Rate x Critical Ratio (Fig 5 & Fig 6)
-    print("\n[1/2] Running Arrival Rate & Criticality Experiments...")
-    results_ac = run_arrival_criticality_experiments(
-        num_dags=200,
-        lambdas=[20.0, 30.0, 40.0],
-        rcrits=[0.30, 0.60, 0.90]
-    )
-    print(f"  -> Saved {len(results_ac)} scenario results to results_experiments.json")
-
-    # Experiment 2: Robustness under Execution Time Delay Noise (Fig 7)
-    print("\n[2/2] Running Robustness / Noise Delay Experiments...")
-    results_rob = run_robustness_experiment(
-        num_dags=200,
-        noise_levels=[0.0, 0.2, 0.4, 0.6, 0.8, 1.0]
-    )
-    print(f"  -> Saved {len(results_rob)} noise-level results to results_robustness.json")
-
-    print("\n" + "=" * 60)
-    print("  All experiments complete! Check:")
-    print("  - results_experiments.json  (Fig 5 & 6 data)")
-    print("  - results_robustness.json   (Fig 7 data)")
-    print("=" * 60)
+    # Run a fast demo of the benchmarks
+    run_arrival_criticality_experiments(num_dags=200, lambdas=[20.0, 30.0, 40.0], rcrits=[0.30, 0.60, 0.90])

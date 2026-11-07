@@ -149,6 +149,7 @@ class ACPSSimulator:
             self.scheduler.clean_completed_applications()
 
         scheduler_elapsed_s = time.time() - start_wall_clock
+        self.platform = sim_platform
 
         # Calculate final metrics
         metrics = SchedulingMetrics(
